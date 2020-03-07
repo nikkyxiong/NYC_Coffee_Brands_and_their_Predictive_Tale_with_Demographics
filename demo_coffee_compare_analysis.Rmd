@@ -89,7 +89,3 @@ ggplotly(pc2)
 
 # Supervised Machine Learning
 
-```{r}
-
-```
-
