@@ -1,0 +1,95 @@
+---
+title: "Demo for Starbucks vs DD around NYC"
+author: "Nikky Xiong"
+date: "3/6/2020"
+output: html_document
+---
+
+# Data from Department of Health and Mental Hygiene (DOHMH) - New York City Restaurant Inspection Results, and the link is here: https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Clean up the Data
+
+```{r, message=FALSE, warning=FALSE}
+library(readr)
+library(dplyr)
+library(stringr)
+
+df <- read.csv('raw_data/coffee_compare.csv')
+coffee <- df %>% select(DBA, reinspections, checks, violations, 
+                        score, inspections, BORO, SCORE)
+coffee$DBA = ifelse(str_detect(coffee$DBA, "DUNKIN"), 'DD', 'Starbucks')
+coffee$DBA %>% table()
+```
+
+```{r}
+coffee$BORO %>% table()
+```
+
+# Visualization
+
+```{r, message=FALSE, warning=FALSE}
+library(ggthemes)
+library(ggplot2)
+library(plotly)
+
+coffee_new <- coffee %>% 
+    group_by(DBA, BORO) %>% 
+    summarize(Value = n())
+
+pc <- ggplot(coffee_new, aes(fill=DBA, y=Value, x=BORO)) + 
+    geom_bar(position="dodge", stat="identity", width = 0.5) +
+    xlab('Neighborhood') + 
+    ylab('Health Violations') + 
+    labs(caption = 'Data Source: DOHMH',
+         fill = 'Brands') +
+    ggtitle('Health Violations of Coffee Brands by Neighborhoods') +
+    theme_bw() +
+    scale_fill_manual(values = c("#f09a56", "#87dc97")) +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc
+```
+
+```{r}
+pc1 <- ggplot(coffee, aes(x = BORO, y = violations, color = DBA)) + 
+    geom_point(alpha = 0.5) +
+    xlab('Neighborhood') + 
+    ylab('Health Violations') + 
+    labs(caption = 'DOHMH') +
+    ggtitle('Health Violations of Coffee Brands by Neighborhoods') +
+    theme_bw() +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8)) +
+    scale_color_manual(values = c("DD" = "#f09a56", 
+                                  'Starbucks' = "#87dc97"))
+ggplotly(pc1)
+```
+
+```{r}
+pc2 <- ggplot(coffee, aes(x = BORO, y = SCORE, color = DBA)) + 
+    geom_point(alpha = 0.5) +
+    xlab('Neighborhood') + 
+    ylab('Total Score for a Particular Inspection') + 
+    labs(caption = 'DOHMH') +
+    ggtitle('Score of Coffee Brands by Neighborhoods') +
+    theme_bw() +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8)) +
+    scale_color_manual(values = c("DD" = "#f09a56", 
+                                  'Starbucks' = "#87dc97"))
+ggplotly(pc2)
+```
+
+# Supervised Machine Learning
+
+```{r}
+
+```
+
