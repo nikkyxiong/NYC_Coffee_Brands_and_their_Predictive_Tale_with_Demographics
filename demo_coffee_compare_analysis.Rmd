@@ -2,7 +2,9 @@
 title: "Demo for Starbucks vs DD around NYC"
 author: "Nikky Xiong"
 date: "3/6/2020"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 # Data from Department of Health and Mental Hygiene (DOHMH) - New York City Restaurant Inspection Results, and the link is here: https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j.
@@ -88,4 +90,41 @@ ggplotly(pc2)
 ```
 
 # Supervised Machine Learning
+
+### Question: Whether can be told the coffee store is Starbucks or not?
+### Binary outcome in this case.
+
+```{r, warning=FALSE, message=FALSE}
+library(caret)
+
+coffee$DBA = ifelse(coffee$DBA == "DD", 0, 1)
+coffee$DBA <- factor(coffee$DBA, 
+                     labels = c("Starbucks", "DD"), 
+                     levels = 1:0) 
+set.seed(12345)
+in_train <- createDataPartition(y = coffee$DBA, 
+                                p = 0.8, list = FALSE)
+training <- coffee[ in_train, ]
+testing  <- coffee[-in_train, ]
+```
+
+```{r}
+logit <- glm(DBA ~ checks + violations + score + BORO, 
+             data = training, family = binomial(link = "logit"))
+
+y_hat_logit <- predict(logit, newdata = testing, type = "response")
+z_logit <- factor(y_hat_logit > 0.5, 
+                  levels = c(TRUE, FALSE), 
+                  labels = c("Starbucks", "DD"))
+
+confusionMatrix(z_logit, reference = testing$DBA)
+```
+
+```{r}
+LDA <- train(DBA ~ checks + violations + score + BORO, 
+             data = training, method = "lda", 
+             reProcess = c("center", "scale"))
+z <- predict(LDA, newdata = testing)
+confusionMatrix(z, testing$DBA)
+```
 
