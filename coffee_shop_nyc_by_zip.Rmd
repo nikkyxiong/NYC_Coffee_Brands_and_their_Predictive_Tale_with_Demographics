@@ -1,0 +1,21 @@
+---
+title: "coffee shops in NYC by zip"
+author: "Nikky Xiong"
+date: "3/19/2020"
+output: html_document
+---
+
+```{r, warning=FALSE, message=FALSE}
+library(readr)
+library(tidyverse)
+library(stringr)
+
+coffee <- read_csv("raw_data/full_nyc_coffee.csv") %>% 
+    select(name, review_count, rating, zip_code, 
+           borough, city)
+```
+
+```{r}
+
+```
+

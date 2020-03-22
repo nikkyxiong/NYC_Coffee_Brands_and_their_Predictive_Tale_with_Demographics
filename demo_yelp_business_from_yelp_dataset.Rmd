@@ -1,0 +1,25 @@
+---
+title: "Yelp Business from Yelp Dataset"
+author: "Nikky Xiong"
+date: "3/17/2020"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r, warning=FALSE, message=FALSE}
+library(jsonlite)
+library(tibble)
+library(tidyr)
+library(stringr)
+
+yelp_json <- flatten(stream_in(file("raw_data/yelp_dataset/business.json")))
+yelp <- as_data_frame(yelp_json) 
+
+yelp_coffee <- yelp %>% 
+    select(-business_id) %>% 
+    filter(str_detect(name, "Starbucks")) 
+
+yelp_coffee$state %>% table()
+```
+

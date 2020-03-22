@@ -632,6 +632,86 @@ summary(lm)</code></pre>
 ## Residual standard error: 1.341e-07 on 58 degrees of freedom
 ## Multiple R-squared:      1,  Adjusted R-squared:      1 
 ## F-statistic: 8.453e+17 on 4 and 58 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>lm2 &lt;- lm(NbShops ~ Population, data = df)
+summary(lm2)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = NbShops ~ Population, data = df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -56.789  -2.692  -1.925  -0.732 191.744 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 8.377e-01  3.947e+00   0.212    0.833    
+## Population  3.494e-05  7.639e-06   4.573  2.4e-05 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 27.25 on 61 degrees of freedom
+## Multiple R-squared:  0.2553, Adjusted R-squared:  0.2431 
+## F-statistic: 20.91 on 1 and 61 DF,  p-value: 2.403e-05</code></pre>
+<pre class="r"><code>lm3 &lt;- lm(NbShops ~ DensityOfPopulation, data = df)
+summary(lm3)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = NbShops ~ DensityOfPopulation, data = df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -56.789  -2.692  -1.925  -0.732 191.744 
+## 
+## Coefficients:
+##                     Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)           0.8377     3.9470   0.212    0.833    
+## DensityOfPopulation 561.2274   122.7204   4.573  2.4e-05 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 27.25 on 61 degrees of freedom
+## Multiple R-squared:  0.2553, Adjusted R-squared:  0.2431 
+## F-statistic: 20.91 on 1 and 61 DF,  p-value: 2.403e-05</code></pre>
+<pre class="r"><code>lm4 &lt;- lm(NbShops ~ AverageIncome, data = df)
+summary(lm4)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = NbShops ~ AverageIncome, data = df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -42.304  -7.146  -3.999  -0.524 207.766 
+## 
+## Coefficients:
+##                 Estimate Std. Error t value Pr(&gt;|t|)   
+## (Intercept)   -3.760e+01  1.579e+01  -2.381  0.02041 * 
+## AverageIncome  8.622e-04  2.796e-04   3.084  0.00307 **
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 29.37 on 61 degrees of freedom
+## Multiple R-squared:  0.1349, Adjusted R-squared:  0.1207 
+## F-statistic: 9.511 on 1 and 61 DF,  p-value: 0.003067</code></pre>
+<pre class="r"><code>lm5 &lt;- lm(NbShops ~ MedianAge, data = df)
+summary(lm5)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = NbShops ~ MedianAge, data = df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -26.533  -8.826  -6.626  -1.424 215.817 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)  
+## (Intercept)   85.566     41.664   2.054   0.0443 *
+## MedianAge     -1.843      1.008  -1.828   0.0725 .
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 30.74 on 61 degrees of freedom
+## Multiple R-squared:  0.05192,    Adjusted R-squared:  0.03638 
+## F-statistic: 3.341 on 1 and 61 DF,  p-value: 0.07248</code></pre>
 </div>
 <div id="machine-learning-models-to-predict-the-number-of-starbucks-stores-by-the-unsupervised-learning-method-glm" class="section level2">
 <h2>Machine Learning models to predict the number of Starbucks stores by the unsupervised learning method (GLM)</h2>
@@ -647,10 +727,28 @@ Grid &lt;- expand.grid(.lambda = seq(.05, 1, length = 10),
                     .alpha = seq(.05, 1, length = 10))</code></pre>
 <pre class="r"><code>ols1 &lt;- lm(NbShops ~ Population + DensityOfPopulation +
              AverageIncome + MedianAge + DensityOfShops, 
+           data = training)
+ols2 &lt;- lm(NbShops ~ DensityOfPopulation + Population + AverageIncome, 
+           data = training)
+ols3 &lt;- lm(NbShops ~ DensityOfPopulation + Population, 
            data = training)</code></pre>
 <pre class="r"><code>mod1 &lt;- train(formula(ols1), data = training, method = &quot;glmnet&quot;, 
                trControl = ctrl, tuneGrid = Grid)
 y_hat_mod1 &lt;- predict(mod1, newdata = testing)
+defaultSummary(data.frame(obs = testing$NbShops, 
+                          pred = y_hat_mod1))</code></pre>
+<pre><code>##      RMSE  Rsquared       MAE 
+## 2.0134303 1.0000000 0.7968491</code></pre>
+<pre class="r"><code>mod2 &lt;- train(formula(ols2), data = training, method = &quot;glmnet&quot;, 
+               trControl = ctrl, tuneGrid = Grid)
+y_hat_mod2 &lt;- predict(mod2, newdata = testing)
+defaultSummary(data.frame(obs = testing$NbShops, 
+                          pred = y_hat_mod1))</code></pre>
+<pre><code>##      RMSE  Rsquared       MAE 
+## 2.0134303 1.0000000 0.7968491</code></pre>
+<pre class="r"><code>mod3 &lt;- train(formula(ols3), data = training, method = &quot;glmnet&quot;, 
+               trControl = ctrl, tuneGrid = Grid)
+y_hat_mod3 &lt;- predict(mod3, newdata = testing)
 defaultSummary(data.frame(obs = testing$NbShops, 
                           pred = y_hat_mod1))</code></pre>
 <pre><code>##      RMSE  Rsquared       MAE 

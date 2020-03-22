@@ -24,11 +24,10 @@ df <- read.csv('raw_data/coffee_compare.csv')
 coffee <- df %>% select(DBA, reinspections, checks, violations, 
                         score, inspections, BORO, SCORE)
 coffee$DBA = ifelse(str_detect(coffee$DBA, "DUNKIN"), 'DD', 'Starbucks')
-coffee$DBA %>% table()
-```
-
-```{r}
-coffee$BORO %>% table()
+coffee %>% 
+    select(BORO, DBA) %>% 
+    group_by(BORO) %>% 
+    table()
 ```
 
 # Visualization
@@ -74,6 +73,28 @@ ggplotly(pc1)
 ```
 
 ```{r}
+coffee_new <- coffee %>% 
+    group_by(DBA, BORO) %>% 
+    summarize(total_vio = sum(violations, na.rm = T))
+
+pc11 <- ggplot(coffee_new, 
+               aes(fill=DBA, y=total_vio, x=BORO)) + 
+    geom_bar(position="dodge", stat="identity", width = 0.5) +
+    xlab('Neighborhood') + 
+    ylab('Health Violations') + 
+    labs(caption = 'Data Source: DOHMH',
+         fill = 'Brands') +
+    ggtitle('Health Violations of Coffee Brands by Neighborhoods') +
+    theme_bw() +
+    scale_fill_manual(values = c("#f09a56", "#87dc97")) +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc11
+```
+
+
+```{r}
 pc2 <- ggplot(coffee, aes(x = BORO, y = SCORE, color = DBA)) + 
     geom_point(alpha = 0.5) +
     xlab('Neighborhood') + 
@@ -87,6 +108,77 @@ pc2 <- ggplot(coffee, aes(x = BORO, y = SCORE, color = DBA)) +
     scale_color_manual(values = c("DD" = "#f09a56", 
                                   'Starbucks' = "#87dc97"))
 ggplotly(pc2)
+```
+
+```{r}
+coffee_new <- coffee %>% 
+    group_by(DBA, BORO) %>% 
+    summarize(total_score = sum(SCORE, na.rm = T))
+
+pc11 <- ggplot(coffee_new, 
+               aes(fill=DBA, y=total_score, x=BORO)) + 
+    geom_bar(position="dodge", stat="identity", width = 0.5) +
+    xlab('Neighborhood') + 
+    ylab('Total Score for a Particular Inspection') + 
+    labs(caption = 'Data Source: DOHMH',
+         fill = 'Brands') +
+    ggtitle('Inspection Score of Coffee Brands by Neighborhoods') +
+    theme_bw() +
+    scale_fill_manual(values = c("#f09a56", "#87dc97")) +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc11
+```
+
+# Linear Regression Analysis 
+
+```{r}
+coffee_lm <- coffee %>% 
+    group_by(DBA, BORO) %>% 
+    summarize(total_num = n(),
+              total_vio = sum(violations, na.rm = T),
+              total_score = sum(SCORE, na.rm = T))
+coffee_lm$DBA = ifelse(coffee_lm$DBA == "DD", 1, 0)
+
+coffee_sb <- coffee_lm %>% filter(DBA == 1)
+coffee_dd <- coffee_lm %>% filter(DBA == 0)
+```
+
+```{r}
+lm <- lm(total_num ~ total_vio + total_score,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(total_num ~ total_vio + total_score,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm1 <- lm(total_vio ~ total_num,
+         data = coffee_sb)
+summary(lm1)
+```
+
+```{r}
+lm1 <- lm(total_vio ~ total_num,
+         data = coffee_dd)
+summary(lm1)
+```
+
+```{r}
+lm2 <- lm(total_vio ~ total_num*DBA,
+         data = coffee_lm)
+summary(lm2)
+```
+
+```{r}
+lm2 <- lm(total_score ~ total_num*DBA,
+         data = coffee_lm)
+summary(lm2)
 ```
 
 # Supervised Machine Learning

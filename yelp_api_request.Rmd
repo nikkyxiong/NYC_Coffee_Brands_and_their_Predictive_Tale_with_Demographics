@@ -22,7 +22,7 @@ key <- Sys.getenv("YELP_KEY")
 ```{r}
 nyc_restaurants <- business_search(api_key = key,
                 location = 'New York City',
-                term = "Restaurant",
+                term = "coffee",
                 limit = 50)
 
 varnames <- c("id", "alias", "name", "image_url", "is_closed", "url", "review_count", "rating", "latitude", "longitude", "transactions", "price", "distance", "street_address", "city", "state", "zip_code")
@@ -62,7 +62,7 @@ for (i in 1:19) {
   offset_val <- i * 50
   new_restaurants <- business_search(api_key = key,
                 location = 'New York City',
-                term = "Restaurant",
+                term = "coffee",
                 limit = 50,
                 offset = offset_val)
   
@@ -98,14 +98,14 @@ for (j in 1:ncol(new_restaurants_df)) {
 }
 
 restaurants_df_backup <- restaurants_df
-write_csv(restaurants_df, "./nyc_restaurants.csv", na = "NA")
+write_csv(restaurants_df, "./nyc_coffee.csv", na = "NA")
 ```
 
 # Manhattan Restaurants
 ```{r}
 nyc_restaurants <- business_search(api_key = key,
                 location = 'Manhattan',
-                term = "Restaurant",
+                term = "coffee",
                 limit = 50)
 
 varnames <- c("id", "alias", "name", "image_url", "is_closed", "url", "review_count", "rating", "latitude", "longitude", "transactions", "price", "distance", "street_address", "city", "state", "zip_code")
@@ -145,7 +145,7 @@ for (i in 1:19) {
   offset_val <- i * 50
   new_restaurants <- business_search(api_key = key,
                 location = 'Manhattan',
-                term = "Restaurant",
+                term = "coffee",
                 limit = 50,
                 offset = offset_val)
   
@@ -181,14 +181,14 @@ for (j in 1:ncol(new_restaurants_df)) {
 }
 
 restaurants_df_backup <- restaurants_df
-write_csv(restaurants_df, "./manhattan_restaurants.csv", na = "NA")
+write_csv(restaurants_df, "./manhattan_coffee.csv", na = "NA")
 ```
 
 # Brooklyn
 ```{r}
 nyc_restaurants <- business_search(api_key = key,
                 location = 'Brooklyn',
-                term = "Restaurant",
+                term = "coffee",
                 limit = 50)
 
 varnames <- c("id", "alias", "name", "image_url", "is_closed", "url", "review_count", "rating", "latitude", "longitude", "transactions", "price", "distance", "street_address", "city", "state", "zip_code")
@@ -228,7 +228,7 @@ for (i in 1:19) {
   offset_val <- i * 50
   new_restaurants <- business_search(api_key = key,
                 location = 'Brooklyn',
-                term = "Restaurant",
+                term = "coffee",
                 limit = 50,
                 offset = offset_val)
   
@@ -264,7 +264,7 @@ for (j in 1:ncol(new_restaurants_df)) {
 }
 
 restaurants_df_backup <- restaurants_df
-write_csv(restaurants_df, "./Brooklyn_restaurants.csv", na = "NA")
+write_csv(restaurants_df, "./Brooklyn_coffee.csv", na = "NA")
 ```
 
 # Queens
@@ -311,7 +311,7 @@ for (i in 1:19) {
   offset_val <- i * 50
   new_restaurants <- business_search(api_key = key,
                 location = 'Queens',
-                term = "Restaurant",
+                term = "coffee",
                 limit = 50,
                 offset = offset_val)
   
@@ -347,7 +347,7 @@ for (j in 1:ncol(new_restaurants_df)) {
 }
 
 restaurants_df_backup <- restaurants_df
-write_csv(restaurants_df, "./Queens_restaurants.csv", na = "NA")
+write_csv(restaurants_df, "./Queens_coffee.csv", na = "NA")
 ```
 
 
@@ -395,7 +395,7 @@ for (i in 1:19) {
   offset_val <- i * 50
   new_restaurants <- business_search(api_key = key,
                 location = 'Bronx',
-                term = "Restaurant",
+                term = "coffee",
                 limit = 50,
                 offset = offset_val)
   
@@ -431,7 +431,7 @@ for (j in 1:ncol(new_restaurants_df)) {
 }
 
 restaurants_df_backup <- restaurants_df
-write_csv(restaurants_df, "./Bronx_restaurants.csv", na = "NA")
+write_csv(restaurants_df, "./Bronx_coffee.csv", na = "NA")
 ```
 
 
@@ -439,7 +439,7 @@ write_csv(restaurants_df, "./Bronx_restaurants.csv", na = "NA")
 ```{r}
 nyc_restaurants <- business_search(api_key = key,
                 location = 'Staten Island',
-                term = "Restaurant",
+                term = "coffee",
                 limit = 50)
 
 varnames <- c("id", "alias", "name", "image_url", "is_closed", "url", "review_count", "rating", "latitude", "longitude", "transactions", "price", "distance", "street_address", "city", "state", "zip_code")
@@ -479,7 +479,7 @@ for (i in 1:19) {
   offset_val <- i * 50
   new_restaurants <- business_search(api_key = key,
                 location = 'Staten Island',
-                term = "Restaurant",
+                term = "coffee",
                 limit = 50,
                 offset = offset_val)
   
@@ -515,6 +515,6 @@ for (j in 1:ncol(new_restaurants_df)) {
 }
 
 restaurants_df_backup <- restaurants_df
-write_csv(restaurants_df, "./StatenIsland_restaurants.csv", na = "NA")
+write_csv(restaurants_df, "./StatenIsland_coffee.csv", na = "NA")
 ```
 

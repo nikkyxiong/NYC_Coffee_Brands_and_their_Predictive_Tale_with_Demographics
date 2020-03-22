@@ -2,7 +2,9 @@
 title: "Demo for Starbucks in NY States by Counties"
 author: "Nikky Xiong"
 date: "3/5/2020"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -100,7 +102,7 @@ pc5 <- ggplot(df, aes(x = DensityOfShops, y = NbShops)) +
 pc5
 ```
 
-## Linear regression to investigate the relationship between 
+## Linear regression to investigate the relationship between
 
 ```{r}
 lm <- lm(NbShops ~ Population + DensityOfPopulation +
@@ -108,6 +110,26 @@ lm <- lm(NbShops ~ Population + DensityOfPopulation +
 summary(lm)
 ```
 
+
+```{r}
+lm2 <- lm(NbShops ~ Population, data = df)
+summary(lm2)
+```
+
+```{r}
+lm3 <- lm(NbShops ~ DensityOfPopulation, data = df)
+summary(lm3)
+```
+
+```{r}
+lm4 <- lm(NbShops ~ AverageIncome, data = df)
+summary(lm4)
+```
+
+```{r}
+lm5 <- lm(NbShops ~ MedianAge, data = df)
+summary(lm5)
+```
 
 ## Machine Learning models to predict the number of Starbucks stores by the unsupervised learning method (GLM)
 
@@ -128,12 +150,32 @@ Grid <- expand.grid(.lambda = seq(.05, 1, length = 10),
 ols1 <- lm(NbShops ~ Population + DensityOfPopulation +
              AverageIncome + MedianAge + DensityOfShops, 
            data = training)
+ols2 <- lm(NbShops ~ DensityOfPopulation + Population + AverageIncome, 
+           data = training)
+ols3 <- lm(NbShops ~ DensityOfPopulation + Population, 
+           data = training)
 ```
 
 ```{r}
 mod1 <- train(formula(ols1), data = training, method = "glmnet", 
                trControl = ctrl, tuneGrid = Grid)
 y_hat_mod1 <- predict(mod1, newdata = testing)
+defaultSummary(data.frame(obs = testing$NbShops, 
+                          pred = y_hat_mod1))
+```
+
+```{r}
+mod2 <- train(formula(ols2), data = training, method = "glmnet", 
+               trControl = ctrl, tuneGrid = Grid)
+y_hat_mod2 <- predict(mod2, newdata = testing)
+defaultSummary(data.frame(obs = testing$NbShops, 
+                          pred = y_hat_mod1))
+```
+
+```{r}
+mod3 <- train(formula(ols3), data = training, method = "glmnet", 
+               trControl = ctrl, tuneGrid = Grid)
+y_hat_mod3 <- predict(mod3, newdata = testing)
 defaultSummary(data.frame(obs = testing$NbShops, 
                           pred = y_hat_mod1))
 ```
