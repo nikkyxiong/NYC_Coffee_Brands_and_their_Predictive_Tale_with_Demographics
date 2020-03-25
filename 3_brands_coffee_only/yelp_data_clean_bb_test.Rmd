@@ -1,0 +1,61 @@
+---
+title: "yelp_data_cleaning"
+author: "Nikky Xiong"
+date: "3/19/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load Data
+```{r message = FALSE}
+library(dplyr)
+library(tidyverse)
+
+nyc_coffee <- read_csv("nyc_BB.csv")
+brooklyn_coffee <- read_csv("Brooklyn_BB.csv")
+bronx_coffee <- read_csv("Bronx_BB.csv")
+manhattan_coffee <- read_csv("manhattan_BB.csv")
+statenisland_coffee <- read_csv("StatenIsland_BB.csv")
+queens_coffee <- read_csv("Queens_BB.csv")
+```
+
+# Assign Boroughs
+```{r}
+nyc_coffee$borough <- "All Boroughs"
+brooklyn_coffee$borough <- "Brooklyn"
+bronx_coffee$borough <- "Bronx"
+manhattan_coffee$borough <- "Manhattan"
+queens_coffee$borough <- "Queens"
+statenisland_coffee$borough <- "Staten Island"
+```
+
+
+```{r}
+all_nyc <- rbind(brooklyn_coffee, bronx_coffee, manhattan_coffee, queens_coffee,statenisland_coffee)
+```
+
+```{r}
+nyc_bb <- all_nyc %>% 
+  filter(state == "NY") %>% 
+  group_by(full_address, name, zip_code) %>% 
+  summarize(ave_rating = mean(rating, na.rm = T),
+           ave_review_count = mean(review_count, na.rm = T),
+           num = n()) %>% 
+    arrange(desc(num)) %>% 
+  mutate(NAME = case_when(
+      str_detect(name, "^Blue Bottle") ~ "BB",
+      TRUE ~ name
+      )) %>% 
+  filter(NAME == "BB")
+
+write_csv(nyc_bb, "./full_nyc_BB.csv", na = "NA" )
+```
+
+
+```{r}
+table(all_nyc$borough)
+```
+

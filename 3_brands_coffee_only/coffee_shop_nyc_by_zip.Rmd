@@ -1,0 +1,171 @@
+---
+title: "Coffee Shops in NYC by Zip"
+author: "Nikky Xiong"
+date: "3/19/2020"
+output: html_document
+---
+
+```{r, warning=FALSE, message=FALSE}
+library(readr)
+library(tidyverse)
+library(stringr)
+
+zip_boro <- read_csv('nyc_zip_demo.csv') 
+
+sb <- read_csv('full_nyc_starbucks.csv') %>% 
+  select(name = NAME, 
+         review_count = ave_review_count, 
+         rating = ave_rating, 
+         Zipcode = zip_code) %>% 
+  left_join(zip_boro) %>% 
+  drop_na(Boro)
+
+dd <- read_csv('full_nyc_Dunkin_backup.csv') %>% 
+  select(name = NAME, 
+         review_count = ave_review_count, 
+         rating = ave_rating, 
+         Zipcode = zip_code) %>% 
+  left_join(zip_boro)%>% 
+  drop_na(Boro)
+dd$name <- "Dunkin'"
+
+bb <- read_csv('full_nyc_BB.csv') %>% 
+  select(name = NAME, 
+         review_count = ave_review_count, 
+         rating = ave_rating, 
+         Zipcode = zip_code) %>% 
+  left_join(zip_boro)%>% 
+  drop_na(Boro)
+bb$name <- "Blue Bottle"
+
+coffee = rbind(sb, dd, bb)
+```
+
+```{r}
+coffee %>% group_by(name) %>% 
+    summarize(num = n()) %>% 
+    arrange(desc(num))
+```
+
+### analysis across coffee brands
+
+```{r}
+coffee %>% 
+    group_by(name) %>% 
+    summarize(ave_rating = mean(rating, na.rm = T),
+           ave_review_count = mean(review_count, na.rm = T),
+           num = n()) %>% 
+    arrange(desc(num))
+```
+
+```{r}
+dv <- coffee %>% 
+    group_by(name, Boro) %>% 
+    summarize(ave_rating = mean(rating, na.rm = T),
+           ave_review_count = mean(review_count, na.rm = T),
+           num = n()) %>% 
+    arrange(desc(num))
+```
+
+### Visualization 
+
+```{r, warning=FALSE, message=FALSE}
+library(ggthemes)
+library(ggplot2)
+library(plotly)
+
+pc <- ggplot(dv, aes(fill=name, y=num, x=Boro)) + 
+    geom_bar(position="dodge", stat="identity", width = 0.5) +
+    xlab('Neighborhood') + 
+    ylab('Number of stores') + 
+    labs(caption = 'Data Source: Yelp',
+         fill = 'Brands') +
+    ggtitle('Number of Coffee Stores by Neighborhoods') +
+    theme_bw() +
+    scale_fill_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97")) +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(ggthemes)
+library(ggplot2)
+library(plotly)
+
+pc <- ggplot(dv, aes(fill=name, y=ave_rating, x=Boro)) + 
+    geom_bar(position="dodge", stat="identity", width = 0.5) +
+    xlab('Neighborhood') + 
+    ylab('Average Rating on Yelp') + 
+    labs(caption = 'Data Source: Yelp',
+         fill = 'Brands') +
+    ggtitle('Rating for Coffee Stores by Neighborhoods') +
+    theme_bw() +
+    scale_fill_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97")) +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(ggthemes)
+library(ggplot2)
+library(plotly)
+
+pc <- ggplot(dv, aes(fill=name, y=ave_rating, x=Boro)) + 
+    geom_bar(position="dodge", stat="identity", width = 0.5) +
+    xlab('Neighborhood') + 
+    ylab('Average Review Count on Yelp') + 
+    labs(caption = 'Data Source: Yelp',
+         fill = 'Brands') +
+    ggtitle('Review Count for Coffee Stores by Neighborhoods') +
+    theme_bw() +
+    scale_fill_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97")) +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc
+```
+
+# Linear Regression Analysis 
+
+```{r}
+lm <- lm(rating ~ review_count,
+         data = sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(rating ~ review_count,
+         data = dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(rating ~ review_count,
+         data = bb)
+summary(lm)
+```
+
+### Write dataset by Zipcode
+
+```{r}
+coffee_zip <- coffee %>% 
+    group_by(name, Zipcode) %>% 
+    summarize(ave_rating = mean(rating, na.rm = T),
+           ave_review_count = mean(review_count, na.rm = T),
+           num = n()) %>% 
+    arrange(desc(num)) %>% 
+    select(Name = name,
+           Avg_rating = ave_rating,
+           Avg_review_count = ave_review_count,
+           Number = num,
+           Zipcode = Zipcode)
+
+write_csv(coffee_zip, "./coffee_zip.csv", na = "NA" )
+```

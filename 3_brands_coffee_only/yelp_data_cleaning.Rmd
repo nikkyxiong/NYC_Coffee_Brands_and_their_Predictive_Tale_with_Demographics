@@ -1,0 +1,140 @@
+---
+title: "yelp_data_cleaning"
+author: "Nikky Xiong"
+date: "3/19/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load Data
+```{r message = FALSE}
+library(dplyr)
+library(tidyverse)
+
+nyc_coffee <- read_csv("nyc_Dunkin.csv")
+brooklyn_coffee <- read_csv("Brooklyn_Dunkin.csv")
+bronx_coffee <- read_csv("Bronx_Dunkin.csv")
+manhattan_coffee <- read_csv("manhattan_Dunkin.csv")
+statenisland_coffee <- read_csv("StatenIsland_Dunkin.csv")
+queens_coffee <- read_csv("Queens_Dunkin.csv")
+```
+
+# Assign Boroughs
+```{r}
+nyc_coffee$borough <- "All Boroughs"
+brooklyn_coffee$borough <- "Brooklyn"
+bronx_coffee$borough <- "Bronx"
+manhattan_coffee$borough <- "Manhattan"
+queens_coffee$borough <- "Queens"
+statenisland_coffee$borough <- "Staten Island"
+```
+
+
+```{r}
+all_nyc <- rbind(brooklyn_coffee, bronx_coffee, manhattan_coffee, queens_coffee,statenisland_coffee)
+```
+
+```{r}
+state_NAs <- all_nyc[is.na(all_nyc$state), ] # none!
+state_NAs %>%
+  arrange(id) %>%
+  select(id, name, state, full_address, borough, categories, everything())
+
+state_non_ny <- all_nyc[all_nyc$state != "NY", ] # 169
+state_non_ny %>%
+  arrange(id) %>%
+  select(id, name, state, full_address, borough, categories, everything())
+
+duplicate_ids <- all_nyc$id[duplicated(all_nyc$id)]
+
+all_nyc[all_nyc$id %in% duplicate_ids, ] %>%
+  arrange(id) %>%
+  select(id, name, categories, full_address, borough, everything())
+```
+## Remove Duplicates
+
+```{r}
+all_nyc$duplicate_coffee <- duplicated(all_nyc$id)
+
+all_nyc <- all_nyc %>%
+  filter(duplicate_coffee == "FALSE")
+
+```
+
+```{r}
+full_ids <- c(nyc_coffee$id, all_nyc$id)
+
+full_ids_df <- data.frame(full_ids, duplicated(full_ids))
+full_ids_df %>%
+  filter(duplicated.full_ids. == TRUE)
+
+non_dup <- as.character(full_ids_df$full_ids[full_ids_df$duplicated.full_ids. == FALSE])
+nyc_coffee %>%
+  filter(id %in% non_dup)
+all_nyc %>%
+  filter(id %in% non_dup)
+```
+
+```{r}
+"%ni%" <- Negate("%in%")
+extras <- non_dup[non_dup %ni% all_nyc$id]
+
+extra_coffee <- nyc_coffee %>%
+  filter(id %in% extras)
+
+all_nyc <- all_nyc %>%
+  select(-duplicate_coffee)
+
+all_nyc <- rbind(all_nyc, extra_coffee)
+
+all_nyc[duplicated(all_nyc$id), ]
+```
+
+## Clean State to just NY
+```{r}
+unique(all_nyc$state)
+
+all_nyc <- all_nyc %>%
+  filter(state == "NY")
+```
+
+# Numeric Price Value
+```{r}
+all_nyc$price_num <- NaN
+
+all_nyc <- all_nyc %>%
+  mutate(price_num = if_else(all_nyc$price == "$", 1, price_num)) 
+all_nyc <- all_nyc%>%
+  mutate(price_num = if_else(all_nyc$price == "$$", 2, price_num))
+all_nyc <- all_nyc%>%
+  mutate(price_num = if_else(all_nyc$price == "$$$", 3, price_num))
+all_nyc <- all_nyc%>%
+  mutate(price_num = if_else(all_nyc$price == "$$$$", 4, price_num))
+
+summary(all_nyc$price_num)
+```
+
+```{r}
+dd_nyc <- all_nyc %>% 
+  group_by(full_address, name, zip_code) %>% 
+  summarize(ave_rating = mean(rating, na.rm = T),
+           ave_review_count = mean(review_count, na.rm = T),
+           num = n()) %>% 
+    arrange(desc(num)) %>% 
+  mutate(NAME = case_when(
+      str_detect(name, "^Dunkin") ~ "DD",
+      TRUE ~ name
+      )) %>% 
+  filter(NAME == "DD")
+
+write_csv(dd_nyc, "./full_nyc_Dunkin.csv", na = "NA" )
+```
+
+
+```{r}
+table(dd_nyc$borough)
+```
+

@@ -1,0 +1,19 @@
+
+
+```{r, warning=FALSE, message=FALSE}
+library(readr)
+library(dplyr)
+
+sb <- read_csv('full_nyc_starbucks.csv')
+sb <- sb %>% 
+    group_by(full_address, zip_code, name) %>% 
+    summarize(ave_rating = mean(rating, na.rm = T),
+           ave_review_count = mean(review_count, na.rm = T),
+           num = n()) %>% 
+    mutate(NAME = case_when(
+      str_detect(name, "^Starbucks") ~ "Starbucks",
+      TRUE ~ name
+      )) %>% 
+    filter(NAME == "Starbucks") 
+```
+

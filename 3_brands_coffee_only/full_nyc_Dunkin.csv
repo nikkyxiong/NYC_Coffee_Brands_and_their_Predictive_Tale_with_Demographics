@@ -1,0 +1,694 @@
+full_address,name,zip_code,ave_rating,ave_review_count,num,NAME
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11220,2.3333333333333335,20.666666666666668,3,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',10306,2.1666666666666665,8,3,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11209,2.75,26.5,2,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11214,2.5,18,2,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11237,4,10,2,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',10017,2.5,28.5,2,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',10028,2.25,13,2,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11430,1.75,25.5,2,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11432,2.5,15,2,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11375,3,16.5,2,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10007,3,20.5,2,DD
+"175 Varick St, New York, NY 10014,",Dunkin',11221,2.25,15,2,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',10011,2.75,21,2,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11102,3.25,17,2,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11106,2.5,23.5,2,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11218,2.25,24.5,2,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',10003,1.5,9,2,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11234,2.5,3.5,2,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',10458,2.5,5,2,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',10314,3.25,4.5,2,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11590,3.25,14.5,2,DD
+"297 Kearny Ave, Kearny, NJ 07032,",Dunkin',11803,2.25,13.5,2,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',10022,3.25,17.5,2,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11101,2.75,22,2,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11208,2.5,5.5,2,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11222,2.75,21,2,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',10004,2.25,8.5,2,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',11501,3,16,2,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',10455,1.75,6,2,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',11419,2.25,6.5,2,DD
+"677 Anderson Ave, Cliffside Park, NJ 07010,",Dunkin',10467,2,8,2,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',11373,2.5,8.5,2,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',10001,2.75,31.5,2,DD
+"10 Park Ave, New York, NY 10016,",Dunkin',10016,2.5,42,1,DD
+"10 W 33rd St, New York, NY 10001,",Dunkin',10001,3,26,1,DD
+"100 1st Ave, New York, NY 10009,",Dunkin',10009,2.5,24,1,DD
+"100 Mill Rd, Freeport, NY 11520,",Dunkin',11520,1,1,1,DD
+"100-05 Queens Blvd, Forest Hills, NY 11375,",Dunkin',11375,1.5,63,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',10003,2.5,12,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',10019,4.5,2,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',10022,5,1,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',10024,3,2,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',10031,3.5,2,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11201,2,22,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11205,2.5,18,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11208,5,1,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11215,3,26,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11222,3.5,6,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11223,1.5,30,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11226,2.5,10,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11231,3,8,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11232,2.5,25,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11235,2.5,29,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11249,2.5,26,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11371,5,1,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11385,5,1,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11692,2,20,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin' Donuts,10005,3.5,4,1,DD
+"1014 Flatbush Ave, Brooklyn, NY 11226,",Dunkin' Donuts & Baskin-Robbins,11205,2.5,7,1,DD
+"1024 1st Ave, New York, NY 10022,",Dunkin',10022,2,12,1,DD
+"10333 94th St, Ozone Park, NY 11417,",Dunkin' Donuts,11417,1.5,6,1,DD
+"1034 North Broadway, Yonkers, NY 10701,",Dunkin',10701,2.5,13,1,DD
+"105 West 125th Street, New York, NY 10027,",Dunkin',10027,2,22,1,DD
+"1063 Northern Blvd, Roslyn, NY 11576,",Dunkin',11576,1.5,32,1,DD
+"107-11/15 Rockaway Blvd, Ozone Park, NY 11417,",Dunkin',11417,2.5,18,1,DD
+"11 Holden Blvd, Staten Island, NY 10314,",Dunkin',10314,1.5,6,1,DD
+"110 E 14th St, University Hall, New York, NY 10003,",Dunkin' Donuts,10003,1.5,25,1,DD
+"110 West 145th St, New York, NY 10039,",Dunkin',10039,2,4,1,DD
+"11010 Flatlands Ave, Brooklyn, NY 11207,",Dunkin',11207,2,9,1,DD
+"114 Bruckner Blvd, Bronx, NY 10454,",Dunkin',10454,2.5,16,1,DD
+"11420 Sutphin Blvd, Jamaica, NY 11434,",Dunkin',11434,1,9,1,DD
+"1149 Utica Ave, Brooklyn, NY 11203,",Dunkin',11203,3,1,1,DD
+"1151 Fulton St, Brooklyn, NY 11216,",Dunkin',11216,1.5,6,1,DD
+"11602 Metropolitan Ave, Richmond Hill, NY 11418,",Dunkin',11418,1.5,24,1,DD
+"122 Fulton St, New York, NY 10038,",Dunkin',10038,2,29,1,DD
+"1225 1st Ave, New York, NY 10021,",Dunkin Donuts-Baskin Robbins-Togo's,10021,2.5,20,1,DD
+"1225 1st Ave, New York, NY 10021,",Dunkin',10021,2.5,35,1,DD
+"126 Jericho Turnpike, Mineola, NY 11501,",Dunkin',11501,2,25,1,DD
+"127 East 23rd St, New York, NY 10010,",Dunkin',10010,2,28,1,DD
+"1285 Castle Hill Ave, Bronx, NY 10462,",Dunkin' Donuts,10462,2.5,9,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',10002,2.5,12,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',10011,1.5,23,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',10018,2,23,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',10019,2.5,20,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',10036,3,16,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',10128,2.5,30,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',10458,3.5,4,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11040,3.5,27,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11103,2.5,17,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11211,3.5,9,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11215,2,13,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11235,2,17,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11354,3,19,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11355,2,22,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11364,2,27,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11370,2,23,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11420,4,6,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11432,2.5,21,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11434,2.5,9,1,DD
+"12903 N Conduit Ave, South Ozone Park, NY 11420,",Dunkin',11579,2.5,3,1,DD
+"13 Graham Ave, Brooklyn, NY 11206,",Dunkin',11206,2.5,12,1,DD
+"130 Dyckman St, New York, NY 10040,",Dunkin',10040,2,23,1,DD
+"1309 Fulton St, Brooklyn, NY 11216,",Dunkin',11216,2.5,13,1,DD
+"1311 Boston Post Rd, Larchmont, NY 10538,",Dunkin',10538,3.5,10,1,DD
+"1320 Hutchinson River Pkwy, Bronx, NY 10461,",Dunkin',10461,2.5,14,1,DD
+"13328 Springfield Blvd, Jamaica, NY 11413,",Dunkin',11413,2,9,1,DD
+"1351 Forest Ave, Staten Island, NY 10302,",Dunkin',10302,1.5,17,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',10001,2.5,12,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',10009,2.5,22,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',10032,3,21,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',10036,3.5,53,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',10128,2,29,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',10304,2.5,5,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',10461,3.5,5,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',10543,4,6,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',10801,3.5,12,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11040,3,20,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11218,3,11,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11226,3,14,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11229,2,13,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11236,2.5,10,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11239,4.5,3,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11358,3,16,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11362,2,45,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11375,2.5,42,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11414,2.5,24,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11561,1.5,25,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11563,3.5,22,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11577,2.5,18,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin',11691,1.5,9,1,DD
+"1351 Paterson Plank Rd, Secaucus, NJ 07094,",Dunkin' Donuts,11385,3,1,1,DD
+"1358 Pennsylvania Ave, Brooklyn, NY 11239,",Dunkin',11239,2,12,1,DD
+"137-05 20th Ave, College Point, NY 11356,",Dunkin',11356,2,1,1,DD
+"1375 Rockaway Parkway, Brooklyn, NY 11236,",Dunkin',11236,2.5,7,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin Dounuts,11226,3,1,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',10010,2,20,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',10011,2.5,36,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',10013,1.5,26,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',10027,2,13,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',10029,2.5,27,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',10036,2.5,43,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',10038,2.5,3,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',10103,2,13,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',10128,2.5,20,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',10301,4,7,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11004,2.5,43,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11101,2.5,11,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11102,2,5,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11206,2.5,11,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11207,2,8,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11209,1,18,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11223,2.5,9,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11234,2.5,27,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11235,3,10,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11369,2,7,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11372,3,12,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11377,2.5,29,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11423,2,15,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11430,2,5,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11432,2.5,16,1,DD
+"139 Centre St, New York, NY 10013,",Dunkin',11435,2,27,1,DD
+"140 Delancey St, New York, NY 10002,",Dunkin',10002,2,31,1,DD
+"1410 Avenue J, Brooklyn, NY 11230,",Dunkin',11230,2.5,29,1,DD
+"1443 Myrtle Ave, Brooklyn, NY 11237,",Dunkin',11237,2,16,1,DD
+"1445 Richmond Ave, Staten Island, NY 10314,",Dunkin',10314,3.5,8,1,DD
+"146-17 Jamaica Ave, Jamaica, NY 11435,",Dunkin',11435,2.5,20,1,DD
+"14625 Northern Blvd, Flushing, NY 11354,",Dunkin',11354,3.5,25,1,DD
+"14636 45th Ave, Flushing, NY 11355,",Dunkin',11355,3,13,1,DD
+"1467 Nostrand Ave, Brooklyn, NY 11226,",Dunkin',11226,1.5,9,1,DD
+"147 E 116th Street, New York, NY 10029,",Dunkin',10029,2.5,16,1,DD
+"1482 1st Ave, New York, NY 10075,",Dunkin',10075,2,7,1,DD
+"150-B Greaves Lane, Staten Island, NY 10308,",Dunkin',10308,3,4,1,DD
+"1506 Cortelyou Rd, Brooklyn, NY 11226,",Dunkin',11226,2,18,1,DD
+"153 West 36th St, New York, NY 10018,",Dunkin',11756,2.5,13,1,DD
+"15367 Horace Harding Expy, Flushing, NY 11367,",Dunkin',11367,3,62,1,DD
+"1575 Flatbush Ave, Brooklyn, NY 11210,",Dunkin',11210,2.5,18,1,DD
+"1592 Westchester Ave, Bronx, NY 10472,",Dunkin',10472,4.5,2,1,DD
+"1599 St Nicholas Ave, New York, NY 10040,",Dunkin',10040,3,12,1,DD
+"1600 Hillside Ave, New Hyde Park, NY 11040,",Dunkin',10472,2,9,1,DD
+"1600 Hillside Ave, New Hyde Park, NY 11040,",Dunkin',11040,4,16,1,DD
+"165 7th St, Garden City, NY 11530,",Dunkin',11530,3,18,1,DD
+"1650 Bruckner Blvd, Bronx, NY 10473,",Dunkin',10473,3,7,1,DD
+"1650 Richmond Ave, Staten Island, NY 10314,",Dunkin',10314,3,17,1,DD
+"168 W 48th St, New York, NY 10036,",Dunkin',10036,2.5,14,1,DD
+"1700 Church Ave, Brooklyn, NY 11226,",Dunkin',11226,1.5,11,1,DD
+"172 Water Street, New York, NY 10038,",Dunkin',10038,5,1,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10002,2,24,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10004,2.5,19,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10014,2.5,25,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10016,2.5,19,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10018,2.5,7,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10027,2,1,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10028,2,22,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10029,2.5,3,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10032,4,10,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10112,3,58,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',10474,5,1,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',11210,2,20,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',11224,2,22,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',11229,2.5,28,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',11355,2.5,17,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',11357,3.5,11,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',11366,2,48,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',11368,2.5,10,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',11378,1.5,15,1,DD
+"175 Varick St, New York, NY 10014,",Dunkin',11542,2.5,15,1,DD
+"1752 Crosby Ave, Bronx, NY 10461,",Dunkin',10461,3.5,13,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',10003,2,29,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',10006,2.5,3,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',10009,2,20,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',10019,3,24,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',10021,2.5,27,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',10022,2.5,27,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',10023,2.5,22,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',10024,2.5,29,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',10065,2,23,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',10459,4,2,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11104,2.5,19,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11208,1.5,7,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11209,3.5,8,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11215,2,26,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11217,1,3,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11223,3.5,19,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11225,3.5,16,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11228,2,17,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11357,1,1,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11372,3,15,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11378,4,2,1,DD
+"1755 Francis Lewis Blvd, Whitestone, NY 11357,",Dunkin',11435,5,1,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin Donuts & Baskin Robbins,11553,2.5,12,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',10016,1.5,17,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',10026,2.5,18,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',10034,3,1,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',10312,2,5,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',10456,3,7,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',10703,3,5,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',10704,3,6,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',11210,2,3,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',11369,1.5,6,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',11377,2,4,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',11385,2.5,10,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',11427,2.5,16,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',11434,3,4,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin',11596,3,17,1,DD
+"1769 Arthurkill Rd, Staten Island, NY 10312,",Dunkin' Donuts / Baskin Robbins,11102,2.5,30,1,DD
+"1775 Coney Island Ave, Brooklyn, NY 11230,",Dunkin',11230,2.5,3,1,DD
+"1779 Southern Blvd, Bronx, NY 10460,",Dunkin',10460,3.5,2,1,DD
+"1834 College Point Blvd, College Point, NY 11356,",Dunkin',11356,3.5,10,1,DD
+"1880 3rd Ave, New York, NY 10029,",Dunkin',10029,3.5,3,1,DD
+"18823 Union Tpke, Fresh Meadows, NY 11366,",Dunkin',10707,1.5,24,1,DD
+"19 Rector St, New York, NY 10006,",Dunkin',10006,3,37,1,DD
+"1903 Kings Hwy, Brooklyn, NY 11229,",Dunkin',11229,2,17,1,DD
+"194 Merritts Rd, Farmingdale, NY 11735,",Dunkin',11735,5,1,1,DD
+"1955A Victory Blvd, Staten Island, NY 10314,",Dunkin',10314,3.5,3,1,DD
+"1993 Atlantic Ave, Brooklyn, NY 11233,",Dunkin',11233,3,10,1,DD
+"1995 Amsterdam Ave, New York, NY 10032,",Dunkin',10032,2.5,4,1,DD
+"2 Penn Plz, New York, NY 10121,",Dunkin',10121,1.5,24,1,DD
+"200 E 89th St, New York, NY 10128,",Dunkin',10128,2.5,27,1,DD
+"200 W 54th St, New York, NY 10019,",Dunkin',10019,3.5,21,1,DD
+"202-09 Hillside Ave, Hollis, NY 11423,",Dunkin',11423,2,21,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin Donuts & Baskin Robbins,10029,2.5,3,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin Donuts/Baskin Robbins,11371,2.5,2,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',10001,2.5,28,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',10007,2.5,34,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',10018,2.5,45,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',10027,4.5,4,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',10075,3.5,3,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',10705,2,1,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11021,2.5,17,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11105,2.5,41,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11212,3,14,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11230,2.5,7,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11232,2,24,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11356,3,27,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11358,2,13,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11368,3,13,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11373,1.5,26,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11379,2.5,17,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11385,2.5,16,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11421,1.5,16,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11530,2,6,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin',11753,2,17,1,DD
+"208 E 14th St, New York, NY 10003,",Dunkin' Donuts,11369,2.5,30,1,DD
+"2083 Lexington Ave, New York, NY 10035,",Dunkin',10035,2.5,7,1,DD
+"2103 Frederick Douglass Blvd, New York, NY 10026,",Dunkin',10026,2.5,17,1,DD
+"21295 26th Ave, Bayside, NY 11360,",Dunkin',11360,2,13,1,DD
+"2141 Williamsbridge Rd, Bronx, NY 10461,",Dunkin',10461,1.5,5,1,DD
+"2148 White Plains Rd, Bronx, NY 10462,",Dunkin',10462,3.5,12,1,DD
+"21522 73rd Ave, Bayside, NY 11364,",Dunkin',11364,2.5,34,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',10305,3,11,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',10452,2.5,3,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',10462,2,4,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',10463,1,1,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',10466,2,6,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',10467,2,4,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',10710,2,13,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',11003,2,14,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',11023,2.5,11,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',11368,2.5,15,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',11428,1.5,9,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',11530,2.5,10,1,DD
+"219 Hempstead Tpke, Elmont, NY 11003,",Dunkin',11550,5,4,1,DD
+"21920 Northern Blvd, Bayside, NY 11361,",Dunkin',11361,3,89,1,DD
+"2200 White Plains Rd, Bronx, NY 10467,",Dunkin',10502,1.5,2,1,DD
+"2200 White Plains Rd, Bronx, NY 10467,",Dunkin',10605,2,21,1,DD
+"2200 White Plains Rd, Bronx, NY 10467,",Dunkin',11710,2.5,16,1,DD
+"2200 White Plains Rd, Bronx, NY 10467,",Dunkin',11758,3.5,7,1,DD
+"2200-2214 Bath Ave, New York, NY 11214,",Dunkin Donut,11214,1.5,8,1,DD
+"2222 Forest Ave, Staten Island, NY 10303,",Dunkin',10303,1,13,1,DD
+"2248 Central Park Ave, Yonkers, NY 10710,",Dunkin',10710,3,14,1,DD
+"2258 1st Ave, New York, NY 10035,",Dunkin',10035,2.5,4,1,DD
+"226 Elizabeth Ave, Newark, NJ 07108,",Dunkin',11783,3.5,19,1,DD
+"226 Elizabeth Ave, Newark, NJ 07108,",Dunkin',11803,3,24,1,DD
+"2275-2375 Richmond Avenue, Staten Island, NY 10314,",Dunkin',10314,3,9,1,DD
+"234 Thompson St, New York, NY 10012,",Dunkin',10012,2,26,1,DD
+"2340 Bell Blvd, Queens, NY 11360,",Dunkin' Donuts,11360,2,7,1,DD
+"2350 Jerome Ave, Bronx, NY 10458,",Dunkin',10458,1,3,1,DD
+"2365 Central Park Ave, Yonkers, NY 10710,",Dunkin',10469,2.5,8,1,DD
+"2365 Central Park Ave, Yonkers, NY 10710,",Dunkin',10573,5,1,1,DD
+"2365 Central Park Ave, Yonkers, NY 10710,",Dunkin',10710,3,8,1,DD
+"23819 Linden Blvd, Elmont, NY 11003,",Dunkin',11003,3,6,1,DD
+"240 E 23rd St, New York, NY 10010,",Dunkin',10010,2,8,1,DD
+"2425 Hylan Blvd, Staten Island, NY 10306,",Dunkin',10306,1,6,1,DD
+"244 Madison Ave, New York, NY 10016,",Dunkin',10016,1.5,11,1,DD
+"2451 Eastchester Rd, Bronx, NY 10469,",Dunkin',10469,3,6,1,DD
+"247 W 36th St, New York, NY 10018,",Dunkin',10314,2.5,5,1,DD
+"25 W 43rd St, New York, NY 10036,",Dunkin',10460,2,5,1,DD
+"250 Broadway, New York, NY 10007,",Dunkin',10007,2.5,20,1,DD
+"250 E. 40th St, New York, NY 10016,",Dunkin',10016,2,32,1,DD
+"260 Halstead Ave, Harrison, NY 10528,",Dunkin',10528,2,24,1,DD
+"2605 Francis Lewis Blvd, Bayside, NY 11361,",Dunkin',11361,2,20,1,DD
+"262 Alexander Ave, Bronx, NY 10454,",Dunkin',10454,2.5,12,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin Donuts,11430,3,6,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',10033,3,27,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',10306,3,7,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',10455,3,6,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',10463,3,21,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',10467,3,4,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',10801,3,9,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11105,1.5,9,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11212,3,2,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11223,2,7,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11225,1,1,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11354,2,15,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11361,2,32,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11372,2,29,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11413,3,6,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11432,1.5,18,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11514,2.5,23,1,DD
+"2655 Richmond Ave, Staten Island, NY 10314,",Dunkin',11580,1.5,38,1,DD
+"267 Avenue X, Brooklyn, NY 11223,",Dunkin',11223,3,19,1,DD
+"27-04 Queens Plaza S, Long Island City, NY 11101,",Dunkin',11101,3.5,8,1,DD
+"2813 Jerusalem Ave, North Bellmore, NY 11710,",Dunkin',11710,2,30,1,DD
+"289 7th Ave, New York, NY 10001,",Dunkin' Donuts & Baskin Robbins,10001,2,25,1,DD
+"289 Utica Ave, Brooklyn, NY 11213,",Dunkin',11213,4,9,1,DD
+"29-14 23rd Ave, Astoria, NY 11105,",Dunkin',11355,2.5,19,1,DD
+"2926 Ave I, Brooklyn, NY 11210,",Dunkin',11210,2.5,12,1,DD
+"297 Kearny Ave, Kearny, NJ 07032,",Dunkin',11416,3,17,1,DD
+"297 Kearny Ave, Kearny, NJ 07032,",Dunkin',11791,2,30,1,DD
+"297 Kearny Ave, Kearny, NJ 07032,",Dunkin',11801,2,21,1,DD
+"2973 E. Tremont Ave, Bronx, NY 10461,",Dunkin',10461,2,5,1,DD
+"299 Burnside Ave, Lawrence, NY 11559,",Dunkin',11559,2,22,1,DD
+"2B W 14th St, New York, NY 10011,",Dunkin',10011,1.5,4,1,DD
+"30 Rockefeller Ctr, New York, NY 10112,",Dunkin',10018,2.5,19,1,DD
+"30-17 39th Ave, Long Island City, NY 11101,",Dunkin',11101,3,4,1,DD
+"3015 Mermaid Ave, Brooklyn, NY 11224,",Dunkin',11224,2.5,7,1,DD
+"3015 Stratton St, Flushing, NY 11354,",Dunkin',11354,2,21,1,DD
+"3031 Coney Island Ave, Brooklyn, NY 11235,",Dunkin',11235,2,5,1,DD
+"3080 Boston Rd, Bronx, NY 10469,",Dunkin',10469,2.5,5,1,DD
+"309 W 57th St, New York, NY 10019,",Dunkin',10019,2.5,22,1,DD
+"3151 Lawson Blvd, Oceanside, NY 11572,",Dunkin',11572,4,4,1,DD
+"316 W 34th St, New York, NY 10001,",Dunkin',10001,2.5,3,1,DD
+"32-48 Steinway St, Astoria, NY 11103,",Dunkin',11103,2,14,1,DD
+"321 Broadway, New York, NY 10007,",Dunkin',10007,3,17,1,DD
+"323 W 42nd St, New York, NY 10036,",Dunkin',10036,2.5,20,1,DD
+"325 Wyckoff Ave, Ridgewood, NY 11385,",Dunkin',11385,2.5,15,1,DD
+"3267 Sunrise Hwy, Wantagh, NY 11793,",Dunkin',11793,3,14,1,DD
+"327 E Fordham Rd, Bronx, NY 10458,",Dunkin' Donuts,10458,2,8,1,DD
+"33 E Lincoln Ave, Pelham, NY 10803,",Dunkin',10033,1.5,6,1,DD
+"33 E Lincoln Ave, Pelham, NY 10803,",Dunkin',10466,1,6,1,DD
+"33 E Lincoln Ave, Pelham, NY 10803,",Dunkin',10467,2.5,7,1,DD
+"33 E Lincoln Ave, Pelham, NY 10803,",Dunkin',10583,3,6,1,DD
+"330 Boston Post Rd, Port Chester, NY 10573,",Dunkin',10573,2.5,14,1,DD
+"333 Jericho Tpke, Syosset, NY 11791,",Dunkin',11791,3,26,1,DD
+"336 N Broadway, Jericho, NY 11753,",Dunkin',11753,2.5,17,1,DD
+"337 South Oyster Bay Rd, Plainview, NY 11803,",Dunkin',11803,2.5,23,1,DD
+"34 Hempstead Tpke, Farmingdale, NY 11735,",Dunkin',11735,2.5,11,1,DD
+"34-21 Greenpoint Ave, Long Island City, NY 11101,",Dunkin',11101,1,2,1,DD
+"3401 Broadway, Long Island City, NY 11106,",Dunkin',11106,1.5,21,1,DD
+"3402 Union St, Flushing, NY 11354,",Dunkin',10530,3,5,1,DD
+"3421 E. Tremont Ave, Bronx, NY 10465,",Dunkin',10465,3,4,1,DD
+"350-370 Grand Concourse, Bronx, NY 10451,",Dunkin',10451,2.5,3,1,DD
+"351 Grand St, New York, NY 10002,",Dunkin',10002,2.5,11,1,DD
+"352 Graham Ave, Brooklyn, NY 11211,",Dunkin',11211,3.5,36,1,DD
+"3530 36th St, Long Island City, NY 11106,",Dunkin',11106,4,6,1,DD
+"359 Neptune Ave, Brooklyn, NY 11235,",Dunkin',11235,2,28,1,DD
+"360 W 31st St, New York, NY 10001,",Dunkin',10001,3,30,1,DD
+"3600 Broadway, New York, NY 10031,",Dunkin',10031,3.5,17,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',10018,3,12,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',10026,2.5,10,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',10301,2,12,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',10309,2,7,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',10462,4.5,3,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',10466,2.5,7,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',10468,2,5,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',10705,1,1,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',11106,1.5,11,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',11354,1,3,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',11357,1.5,5,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',11412,1.5,3,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',11415,2.5,23,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',11554,2,13,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',11566,2,17,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',11581,2.5,29,1,DD
+"3602-B Quentin Rd, Brooklyn, NY 11234,",Dunkin',11590,3.5,7,1,DD
+"361 First Avenue, New York, NY 10010,",Dunkin',10010,3.5,18,1,DD
+"37-76 Junction Blvd, Corona, NY 11368,",Dunkin',11368,2.5,8,1,DD
+"370 Lexington Ave, New York, NY 10017,",Dunkin',10017,2,42,1,DD
+"3703 95th St, Jackson Heights, NY 11372,",Dunkin',11372,1.5,2,1,DD
+"3723 Ditmars Blvd, Astoria, NY 11105,",Dunkin',11105,3.5,19,1,DD
+"373 Kings Hwy, Brooklyn, NY 11223,",Dunkin',11223,2.5,20,1,DD
+"3732 E. Tremont Ave, Bronx, NY 10465,",Dunkin',10465,1.5,6,1,DD
+"3804 Boston Post Rd, Bronx, NY 10475,",Dunkin',10475,1,1,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',10005,3,22,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',10013,2,40,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',10014,2.5,29,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',10016,3.5,12,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',10017,5,1,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',10024,3,1,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',10025,3,10,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',10309,3,6,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',10451,3,5,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11104,2.5,26,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11204,2,32,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11211,1.5,14,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11213,1.5,10,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11214,2.5,20,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11223,2,18,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11229,2.5,10,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11231,2,29,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11234,5,2,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11354,5,1,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11430,2,40,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin',11548,4,12,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin' Donuts,11224,3.5,5,1,DD
+"383 Court St, Brooklyn, NY 11231,",Dunkin' Donuts,11377,2.5,15,1,DD
+"3845 Richmond Ave, Staten Island, NY 10312,",Dunkin',10530,2.5,11,1,DD
+"3845 Richmond Ave, Staten Island, NY 10312,",Dunkin',10601,3,10,1,DD
+"3845 Richmond Ave, Staten Island, NY 10312,",Dunkin',11436,2,8,1,DD
+"3845 Richmond Ave, Staten Island, NY 10312,",Dunkin',11758,2.5,15,1,DD
+"3845 Richmond Ave, Staten Island, NY 10312,",Dunkin',11762,3.5,10,1,DD
+"387 Jay St, Brooklyn, NY 11201,",Dunkin',11201,2,34,1,DD
+"388 W. John St, Hicksville, NY 11801,",Dunkin',11801,4,6,1,DD
+"389 Atlantic Ave, Freeport, NY 11520,",Dunkin',11520,1.5,8,1,DD
+"3921 5th Ave, Brooklyn, NY 11232,",Dunkin',11232,2,5,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',10016,2,12,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',10018,2.5,7,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',10025,3,17,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',10033,3,12,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',10312,1.5,5,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',10468,3.5,8,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',10803,3,7,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',11021,2,1,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',11030,2.5,17,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',11101,2,7,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',11361,3,6,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',11374,3,25,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',11510,2,15,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',11557,2.5,19,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',11570,3,19,1,DD
+"398 Audobon Ave, New York, NY 10033,",Dunkin',11771,2,18,1,DD
+"4 Pennsylvania Plaza, New York, NY 10001,",Dunkin',10001,1,3,1,DD
+"4090 Boston Rd, Bronx, NY 10475,",Dunkin',10475,3.5,5,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',10001,2,1,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',10033,2.5,10,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',10452,2.5,3,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',10459,1.5,12,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',10461,4,1,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',10468,4,11,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',10471,3.5,13,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',11207,1,1,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',11234,2,11,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',11425,2,5,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',11428,2.5,6,1,DD
+"410 Minnisink Rd, Totowa, NJ 07512,",Dunkin',11801,2.5,3,1,DD
+"411 E 70th St, New York, NY 10021,",Dunkin',10021,2,33,1,DD
+"4115 3rd Ave, Bronx, NY 10457,",Dunkin',10457,2.5,13,1,DD
+"412 3rd Ave, New York, NY 10016,",Dunkin',10016,3,12,1,DD
+"4199 Broadway, New York, NY 10033,",Dunkin',10033,2.5,8,1,DD
+"42 West 39th St, New York, NY 10018,",Dunkin Donut,10018,2.5,13,1,DD
+"4202 Northern Blvd, Pathmark Mall, Long Island City, NY 11101,",Dunkin',11101,2.5,7,1,DD
+"425 Central Park Ave, White Plains, NY 10606,",Dunkin',10606,2.5,10,1,DD
+"432 Jerusalem Ave, Hicksville, NY 11801,",Dunkin',11801,5,1,1,DD
+"439 Crescent St, Brooklyn, NY 11208,",Dunkin',11208,1,1,1,DD
+"4405 Kissena Blvd, Flushing, NY 11355,",Dunkin',11355,2.5,25,1,DD
+"448 Fifth Ave, Brooklyn, NY 11215,",Dunkin',11215,3,29,1,DD
+"46-09 Queens Blvd, Sunnyside, NY 11104,",Dunkin',11801,2,45,1,DD
+"467 Old Country Rd, Westbury, NY 11590,",Dunkin',11590,3,28,1,DD
+"471 Lexington Ave, New York, NY 10017,",Dunkin',10017,2.5,12,1,DD
+"475 Hempstead Tpke, West Hempstead, NY 11552,",Dunkin',11552,2,16,1,DD
+"476 Second Ave, New York, NY 10016,",Dunkin',10016,2.5,13,1,DD
+"4785 Boston Post Rd, Pelham Manor, NY 10803,",Dunkin',10803,2.5,9,1,DD
+"482 9th Ave, New York, NY 10018,",Dunkin' Donuts / Baskin Robbins,10018,2.5,7,1,DD
+"49 Nassau Street, New York, NY 10038,",Dunkin',10038,3,15,1,DD
+"4902 Vernon Blvd, Long Island City, NY 11101,",Dunkin',11101,2,33,1,DD
+"4912 Fort Hamilton Pkwy, Brooklyn, NY 11219,",Dunkin',11219,2.5,27,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',10018,2.5,4,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',10025,3,5,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',10305,2,7,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',10310,2,22,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',10457,1,1,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',10459,2.5,7,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',10463,2.5,21,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',10469,2,8,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',11356,2.5,6,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',11558,3,10,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',11563,3,6,1,DD
+"4914-22 Kennedy Blvd, Ste 101, West New York, NJ 07093,",Dunkin',11692,1,1,1,DD
+"4942 Broadway, New York, NY 10034,",Dunkin',10034,2.5,27,1,DD
+"50 Mamaroneck Ave, White Plains, NY 10601,",Dunkin',10601,2,9,1,DD
+"506 Clarkson Ave, Brooklyn, NY 11203,",Dunkin',11203,3,13,1,DD
+"511 E. 163rd St, Bronx, NY 10451,",Dunkin',10451,1.5,4,1,DD
+"513 E 138th St, Bronx, NY 10454,",Dunkin',10454,2,1,1,DD
+"520 8th Ave, New York, NY 10018,",Dunkin',11430,1.5,7,1,DD
+"527 Metropolitan Ave, Brooklyn, NY 11211,",Dunkin',11211,2.5,8,1,DD
+"542 Eastern Pkwy, Brooklyn, NY 11225,",Dunkin',11225,2,25,1,DD
+"55 Main St, Port Washington, NY 11050,",Dunkin',11050,3.5,11,1,DD
+"56 Court St, Brooklyn, NY 11201,",Dunkin',11201,2,18,1,DD
+"5615 Myrtle Ave, Flushing, NY 11385,",Dunkin',11385,1.5,11,1,DD
+"568 West 235th St, Ste 570, Bronx, NY 10463,",Dunkin',10463,4,12,1,DD
+"57 E 125th St, New York, NY 10035,",Dunkin',10035,3,1,1,DD
+"575 Fulton St, Farmingdale, NY 11735,",Dunkin',11735,2,24,1,DD
+"578 Atlantic Ave, Brooklyn, NY 11217,",Dunkin',11217,1.5,41,1,DD
+"579 Peninsula Blvd, Hempstead, NY 11550,",Dunkin',11550,2,22,1,DD
+"585 Veterans Rd W, Staten Island, NY 10309,",Dunkin',10309,3,11,1,DD
+"5901 Church Avenue, Brooklyn, NY 11203,",Dunkin',11203,1.5,9,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',10001,1.5,15,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',10032,3,6,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',10308,1.5,24,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',10451,2.5,9,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',10461,4.5,2,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',10801,1,5,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',11003,2.5,17,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',11105,3,3,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',11205,2.5,12,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',11357,2,4,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',11372,3.5,13,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',11417,2.5,4,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',11507,2.5,9,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',11510,2,13,1,DD
+"592 Passaic Ave, Unit 10, West Caldwell, NJ 07006,",Dunkin',11554,2.5,9,1,DD
+"595 Franklin Ave, Franklin Square, NY 11010,",Dunkin',11010,1.5,29,1,DD
+"5951 Queens Midtown Expy, Maspeth, NY 11378,",Dunkin',10453,2.5,8,1,DD
+"5951 Queens Midtown Expy, Maspeth, NY 11378,",Dunkin',10461,2,11,1,DD
+"5987 Broadway, Bronx, NY 10471,",Dunkin',10471,3,10,1,DD
+"6 East 46th St, New York, NY 10017,",Dunkin',10017,2.5,16,1,DD
+"601 2nd Ave, New York, NY 10016,",Dunkin' Donuts / Baskin Robbins,10016,2.5,27,1,DD
+"601 Jericho Tpke, New Hyde Park, NY 11040,",Dunkin',11040,2.5,16,1,DD
+"6010 80th St, Middle Village, NY 11379,",Dunkin',11379,2,17,1,DD
+"61-12 Roosevelt Ave, Woodside, NY 11377,",Dunkin',11377,2,11,1,DD
+"610 Utica Ave, Brooklyn, NY 11203,",Dunkin',11203,2,25,1,DD
+"6122 Fresh Pond Rd, Middle Village, NY 11379,",Dunkin',11379,3,15,1,DD
+"617 Brighton Beach Ave, Brooklyn, NY 11235,",Dunkin',11235,2.5,22,1,DD
+"625 8th Ave, Fl 2 South Wing, New York, NY 10018,",Dunkin',10018,2,17,1,DD
+"6309 18th Ave, Brooklyn, NY 11204,",Dunkin',11204,2.5,21,1,DD
+"6314 Queens Blvd, Woodside, NY 11377,",Dunkin',11377,1.5,5,1,DD
+"636 City Island Ave, Bronx, NY 10464,",Dunkin',10464,1.5,11,1,DD
+"6365 Woodhaven Blvd, Rego Park, NY 11374,",Dunkin',11374,2,36,1,DD
+"6366 108th St, Forest Hills, NY 11375,",Dunkin',11375,2.5,15,1,DD
+"64 Fulton St, New York, NY 10038,",Dunkin',10038,2,22,1,DD
+"6502 14th Ave, Brooklyn, NY 11219,",Dunkin',11219,2,6,1,DD
+"6502 14th Ave, Brooklyn, NY 11219,",Dunkin',11801,3,4,1,DD
+"655 Rossville Ave, Staten Island, NY 10309,",Dunkin',10314,2,12,1,DD
+"662 Dogwood Ave, Franklin Square, NY 11010,",Dunkin',11010,1.5,14,1,DD
+"6627 Bay Pkwy, Brooklyn, NY 11204,",Dunkin',11204,2,33,1,DD
+"666 5th Ave, New York, NY 10103,",Dunkin',10471,1.5,8,1,DD
+"6667 Fresh Pond Rd, Flushing, NY 11385,",Dunkin',11385,2.5,7,1,DD
+"677 Anderson Ave, Cliffside Park, NJ 07010,",Dunkin',10453,2,16,1,DD
+"677 Anderson Ave, Cliffside Park, NJ 07010,",Dunkin',10462,4,14,1,DD
+"677 Anderson Ave, Cliffside Park, NJ 07010,",Dunkin',10701,1.5,8,1,DD
+"677 Anderson Ave, Cliffside Park, NJ 07010,",Dunkin',10704,2.5,15,1,DD
+"677 Anderson Ave, Cliffside Park, NJ 07010,",Dunkin',11236,1.5,8,1,DD
+"677 Anderson Ave, Cliffside Park, NJ 07010,",Dunkin',11435,2,5,1,DD
+"677 Anderson Ave, Cliffside Park, NJ 07010,",Dunkin',11510,1.5,22,1,DD
+"677 Anderson Ave, Cliffside Park, NJ 07010,",Dunkin',11554,2,16,1,DD
+"677 Anderson Ave, Cliffside Park, NJ 07010,",Dunkin',11570,2,7,1,DD
+"678 Central Park Ave, Yonkers, NY 10704,",Dunkin',10704,4,11,1,DD
+"680 St Nicholas Ave, New York, NY 10030,",Dunkin',10030,2.5,20,1,DD
+"700 Richmond Ter, Staten Island, NY 10301,",Dunkin',10301,2.5,2,1,DD
+"7007 Myrtle Ave, Glendale, NY 11385,",Dunkin',11385,3.5,17,1,DD
+"71-60 Austin St, Forest Hills, NY 11375,",Dunkin',11373,2,18,1,DD
+"710 McLean Ave, Yonkers, NY 10704,",Dunkin',10704,1.5,7,1,DD
+"712 3rd Ave, New York, NY 10017,",Dunkin',10017,1.5,16,1,DD
+"721 Flatbush Ave, Brooklyn, NY 11226,",Dunkin',11226,3,9,1,DD
+"727 Manhattan Ave, Brooklyn, NY 11222,",Dunkin',10607,2,24,1,DD
+"7302 Austin St, Forest Hills, NY 11375,",Dunkin',11375,2,31,1,DD
+"75 Christopher St, New York, NY 10014,",Dunkin',10014,2.5,19,1,DD
+"750 8th Ave, New York, NY 10036,",Dunkin',10036,1,1,1,DD
+"7519 5th Avenue, Brooklyn, NY 11209,",Dunkin',11209,2,14,1,DD
+"759 S Columbus Ave, Mount Vernon, NY 10550,",Dunkin',10550,1.5,13,1,DD
+"79-27 Main Street, Flushing, NY 11367,",Dunkin',11367,2,37,1,DD
+"7910 Springfield Blvd, Oakland Gardens, NY 11364,",Dunkin',11364,3,5,1,DD
+"799 Main St, New Rochelle, NY 10801,",Dunkin',10801,2.5,4,1,DD
+"80 John St, New York, NY 10038,",Dunkin',10038,4,9,1,DD
+"80 John St, New York, NY 10038,",Dunkin' Donuts,10002,2.5,23,1,DD
+"800 2nd Ave, New York, NY 10017,",Dunkin',11212,1.5,7,1,DD
+"815 10th Ave, New York, NY 10019,",Dunkin',10019,2.5,52,1,DD
+"8155 Lefferts Blvd, Kew Gardens, NY 11415,",Dunkin',11415,2.5,35,1,DD
+"82-09 153rd Ave, Howard Beach, NY 11414,",Dunkin',11414,2,9,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',10001,2,1,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',10018,2,9,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',10025,2,6,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',10037,2,15,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',10038,2,27,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',10121,2,12,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',10455,2,1,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',10470,4,1,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',11101,2.5,8,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',11208,2.5,4,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',11366,1.5,29,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',11418,1,1,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',11422,3,13,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',11426,2.5,15,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',11434,2,6,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',11550,2,3,1,DD
+"843 East 149th St, Bronx, NY 10455,",Dunkin',11561,2.5,10,1,DD
+"850 8th Ave, New York, NY 10019,",Dunkin',10019,3,10,1,DD
+"850 Bronx River Rd, Yonkers, NY 10708,",Dunkin',10708,1.5,13,1,DD
+"8509 5th Ave, Brooklyn, NY 11209,",Dunkin',11209,2,23,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin Donuts/Baskin Robbins,10001,2,23,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',10001,3.5,5,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',10017,3,3,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',10029,2,3,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',10031,3,27,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',10065,2.5,14,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11010,2,21,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11214,2.5,30,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11217,3,2,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11220,2,20,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11228,2,28,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11234,3,12,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11236,3.5,7,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11354,1.5,32,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11372,3,10,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11375,2,11,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11377,2.5,6,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11421,4,5,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11422,2.5,10,1,DD
+"8513 18th Ave, Brooklyn, NY 11214,",Dunkin',11435,2.5,16,1,DD
+"87-10 Northern Blvd, Jackson Heights, NY 11372,",Dunkin',11372,3.5,13,1,DD
+"8775 Bay Pkwy, Brooklyn, NY 11214,",Dunkin',11214,1,1,1,DD
+"88-01 Queens Blvd, Elmhurst, NY 11373,",Dunkin',10457,1.5,9,1,DD
+"88-01 Queens Blvd, Elmhurst, NY 11373,",Dunkin',10573,2,5,1,DD
+"88-01 Queens Blvd, Elmhurst, NY 11373,",Dunkin',10804,1.5,7,1,DD
+"88-01 Queens Blvd, Elmhurst, NY 11373,",Dunkin',11050,2.5,6,1,DD
+"88-01 Queens Blvd, Elmhurst, NY 11373,",Dunkin' Donuts,10583,2.5,9,1,DD
+"89 E 42nd St, New York, NY 10017,",Dunkin Donuts,10119,3,5,1,DD
+"89 E 42nd St, New York, NY 10017,",Dunkin',11378,1.5,47,1,DD
+"9 Gramatan Ave, Mount Vernon, NY 10550,",Dunkin',10550,2,3,1,DD
+"900 1st Ave, New York, NY 10022,",Dunkin',10022,4,12,1,DD
+"901 Huguenot Ave, Staten Island, NY 10312,",Dunkin',10312,3,14,1,DD
+"91-23 Queens Blvd, Elmhurst, NY 11373,",Dunkin',11373,2,17,1,DD
+"92-77 Queens Blvd, Rego Park, NY 11374,",Dunkin',11207,3.5,5,1,DD
+"92-77 Queens Blvd, Rego Park, NY 11374,",Dunkin',11714,2.5,22,1,DD
+"92-77 Queens Blvd, Rego Park, NY 11374,",Dunkin',11756,2.5,12,1,DD
+"925 Hunts Point Ave, Bronx, NY 10459,",Dunkin',10459,3,6,1,DD
+"925 Hunts Point Ave, Bronx, NY 10459,",Dunkin',11797,3,18,1,DD
+"9405 Rockaway Blvd, Jamaica, NY 11417,",Dunkin',11417,2,20,1,DD
+"950 Allerton Ave, Bronx, NY 10469,",Dunkin',10469,3,6,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin Donuts,11417,2.5,4,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',10018,3,2,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',10027,2.5,12,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',10038,2.5,15,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',10454,3.5,3,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',10465,2.5,11,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',10543,3.5,11,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',10710,2,15,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',11004,2.5,18,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',11229,3,12,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',11361,1,6,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',11365,1.5,46,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',11373,2,12,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',11420,2,25,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',11429,1.5,12,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',11430,2.5,24,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',11542,2.5,11,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',11553,2.5,5,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin',11572,3,14,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin' Donuts,11233,1.5,8,1,DD
+"9507 57th Ave, Elmhurst, NY 11373,",Dunkin’ Donuts,10305,3,8,1,DD
+"9637 Queens Blvd, Rego Park, NY 11374,",Dunkin',11374,2,15,1,DD
+"995 Manor Rd, Staten Island, NY 10314,",Dunkin',10314,2.5,6,1,DD
+"Jfk International Airport, Terminal 8, Gate 42, Jamaica, NY 11435,",Dunkin Donuts,11435,3.5,7,1,DD

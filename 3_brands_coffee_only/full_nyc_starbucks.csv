@@ -1,0 +1,279 @@
+full_address,name,zip_code,ave_rating,ave_review_count,num,NAME
+"55 W 52nd St, New York, NY 10019,",Starbucks,10019,2.361111111111111,30.61111111111111,18,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,11201,2.857142857142857,45.357142857142854,14,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,10036,2.4444444444444446,36.333333333333336,9,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,10001,2.7777777777777777,37.333333333333336,9,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,10017,2.6875,35.625,8,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,10022,2.857142857142857,22.142857142857142,7,Starbucks
+"145 Third Ave, New York, NY 10003,",Starbucks,10010,2.642857142857143,47.857142857142854,7,Starbucks
+"145 Third Ave, New York, NY 10003,",Starbucks,10016,2.9285714285714284,47.714285714285715,7,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,10013,2.5,43.142857142857146,7,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,10007,2.6666666666666665,44.166666666666664,6,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,10025,2.6666666666666665,37.833333333333336,6,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,10003,2.8,79.8,5,Starbucks
+"145 Third Ave, New York, NY 10003,",Starbucks,10011,2.375,37.5,4,Starbucks
+"145 Third Ave, New York, NY 10003,",Starbucks,11373,3,44.5,4,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,10012,2.25,66,4,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,10023,2.375,54.25,4,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,10024,2.75,55.75,4,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,10314,2.5,26.75,4,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,10005,2.5,33.5,4,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,10001,3.5,19.333333333333332,3,Starbucks
+"145 Third Ave, New York, NY 10003,",Starbucks,11375,3.1666666666666665,69.66666666666667,3,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,10128,2.6666666666666665,31,3,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,11354,2.3333333333333335,31.666666666666668,3,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,10018,2.3333333333333335,51.666666666666664,3,Starbucks
+"55 W 52nd St, New York, NY 10019,",Starbucks,10021,2.3333333333333335,67.66666666666667,3,Starbucks
+"Njtp Mm 116, NJ TP Vince Lombardi Travel Plaza, East Ridgefield, NJ 07657,",Starbucks,11530,2,27.666666666666668,3,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,10018,2.25,94,2,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,10065,2.75,63,2,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,10112,2.75,57.5,2,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,10119,2.5,11,2,Starbucks
+"145 Third Ave, New York, NY 10003,",Starbucks,10014,3.75,37,2,Starbucks
+"145 Third Ave, New York, NY 10003,",Starbucks,11374,3.25,52,2,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,10006,2.75,27.5,2,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,10009,2.5,35,2,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,10028,3.25,43.5,2,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,11355,2,76,2,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,10451,2,12,2,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,10465,2.75,26.5,2,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,11581,2.5,12.5,2,Starbucks
+"2188 White Plains Rd, Bronx, NY 10462,",Starbucks,10704,3.5,6.5,2,Starbucks
+"2188 White Plains Rd, Bronx, NY 10462,",Starbucks,10708,2.75,48,2,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,10011,2.5,47.5,2,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,10016,2.5,41,2,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,10022,2.75,35.5,2,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,10038,2.25,38.5,2,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,11209,3,84.5,2,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,11214,2.75,79,2,Starbucks
+"55 W 52nd St, New York, NY 10019,",Starbucks,10001,1.75,14.5,2,Starbucks
+"55 W 52nd St, New York, NY 10019,",Starbucks,10036,2.5,75.5,2,Starbucks
+"55 W 52nd St, New York, NY 10019,",Starbucks,10065,2.5,64.5,2,Starbucks
+"Njtp Mm 116, NJ TP Vince Lombardi Travel Plaza, East Ridgefield, NJ 07657,",Starbucks,11542,2.75,28.5,2,Starbucks
+"Njtp Mm 116, NJ TP Vince Lombardi Travel Plaza, East Ridgefield, NJ 07657,",Starbucks,11548,2.75,18.5,2,Starbucks
+"1 Battery Park Plz, New York, NY 10004,",Starbucks,10004,2,60,1,Starbucks
+"1 Bryant Park, New York, NY 10036,",Starbucks,10036,2,10,1,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,10103,2.5,7,1,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,11103,3.5,57,1,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,11106,3.5,89,1,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,11430,2,3,1,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks,11435,3,46,1,Starbucks
+"1 Penn Plaza Concourse Level, New York, NY 10119,",Starbucks - Terminal 8,11430,2,16,1,Starbucks
+"10 Union Square E, New York, NY 10003,",Starbucks,10003,2.5,155,1,Starbucks
+"100 William St, New York, NY 10038,",Starbucks,10038,3,31,1,Starbucks
+"106 Page Ave, Staten Island, NY 10309,",Starbucks,10309,3.5,47,1,Starbucks
+"107 E 43rd St, New York, NY 10036,",Starbucks,10036,2.5,6,1,Starbucks
+"1077 3rd Ave, New York, NY 10065,",Starbucks,10065,3,21,1,Starbucks
+"1095 Lexington Ave, New York, NY 10075,",Starbucks,10075,3,9,1,Starbucks
+"1100 Avenue Of The Americas, New York, NY 10036,",Starbucks,10036,2,44,1,Starbucks
+"1100 Northern Blvd, Macy's, Manhasset, NY 11030,",Starbucks,11030,3,34,1,Starbucks
+"115 Broadway, New York, NY 10006,",Starbucks,10006,3,44,1,Starbucks
+"118-24 Queens Blvd, Kew Gardens, NY 11415,",Starbucks,11415,3.5,94,1,Starbucks
+"1243 Woodrow Rd, Ste 306, Woodrow Shopping Plaza, Staten Island, NY 10312,",Starbucks,10312,3.5,17,1,Starbucks
+"1261 Lexington Ave, New York, NY 10028,",Starbucks,10028,3,39,1,Starbucks
+"1290 Sixth Ave, New York, NY 10019,",Starbucks,10019,2,26,1,Starbucks
+"130 Fulton St, New York, NY 10038,",Starbucks,10038,3.5,56,1,Starbucks
+"1301 Avenue Of The Americas, New York, NY 10019,",Starbucks,10019,3.5,16,1,Starbucks
+"1330 6th Ave, New York, NY 10019,",Starbucks,10019,2.5,57,1,Starbucks
+"13505 20th Ave, Target, Flushing, NY 11356,",Starbucks,11356,3,15,1,Starbucks
+"138-11 20th Ave, Whitestone, NY 11356,",Starbucks,11356,3,44,1,Starbucks
+"139 Flatbush Ave, Brooklyn, NY 11217,",Starbucks,11217,2.5,67,1,Starbucks
+"139 Flatbush Ave, Target, Brooklyn, NY 11217,",Starbucks,11217,2.5,4,1,Starbucks
+"14 Wall St, New York, NY 10005,",Starbucks,10005,2.5,25,1,Starbucks
+"141 Amsterdam, none, New York, NY 10023,",Starbucks,10023,2.5,34,1,Starbucks
+"1411 Broadway, New York, NY 10018,",Starbucks,10018,2,64,1,Starbucks
+"1417 Kings Hwy, Brooklyn, NY 11229,",Starbucks,11229,2,118,1,Starbucks
+"145 Third Ave, New York, NY 10003,",Starbucks,10001,2.5,39,1,Starbucks
+"145 Third Ave, New York, NY 10003,",Starbucks,10003,2.5,38,1,Starbucks
+"145 Third Ave, New York, NY 10003,",Starbucks,10017,2.5,44,1,Starbucks
+"145 Third Ave, New York, NY 10003,",Starbucks,11101,3.5,11,1,Starbucks
+"1488 Third Ave, New York, NY 10028,",Starbucks,10028,3.5,38,1,Starbucks
+"150 E 23rd St, New York, NY 10010,",Starbucks,10010,3,8,1,Starbucks
+"150 E 42nd St, New York, NY 10017,",Starbucks,10017,2.5,58,1,Starbucks
+"150 Varick St, New York, NY 10013,",Starbucks,10013,2,88,1,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,10279,2,49,1,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,11206,3.5,76,1,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,11224,2.5,77,1,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,11373,3.5,16,1,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,11375,5,1,1,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks,11414,3.5,136,1,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks Reserve,10003,3.5,37,1,Starbucks
+"157-41 Cross Bay Blvd, Howard Beach, NY 11414,",Starbucks Reserve,10281,3.5,38,1,Starbucks
+"1585 Broadway, New York, NY 10036,",Starbucks Reserve,10036,3,142,1,Starbucks
+"1600 Broadway, Manhattan, NY 10019,",Starbucks,10019,2.5,6,1,Starbucks
+"1631 1st Ave, New York, NY 10028,",Starbucks,10028,3,58,1,Starbucks
+"164 Park Pl, Brooklyn, NY 11217,",Starbucks,11217,3.5,80,1,Starbucks
+"166 7th Ave, Brooklyn, NY 11215,",Starbucks,11215,3.5,91,1,Starbucks
+"171 W 230th St, Bronx, NY 10463,",Starbucks,10463,3,34,1,Starbucks
+"1715 East 13th St, New York, NY 11229,",Starbucks,11229,2.5,3,1,Starbucks
+"177 Eighth Ave, New York, NY 10011,",Starbucks,10011,3,31,1,Starbucks
+"184 7th St, Garden City, NY 11530,",Starbucks,11530,3,48,1,Starbucks
+"1886 Eastchester Rd, Bronx, NY 10461,",Starbucks,10461,3.5,32,1,Starbucks
+"1889 Broadway, New York, NY 10023,",Starbucks,10023,2.5,69,1,Starbucks
+"1927 Flatbush Ave, Brooklyn, NY 11234,",Starbucks,11234,2.5,43,1,Starbucks
+"2 Broadway, New York, NY 10004,",Starbucks,10004,2.5,68,1,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,10026,2.5,9,1,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,10029,2.5,106,1,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,10035,1.5,15,1,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,10310,3,41,1,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,11365,2.5,136,1,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,11371,2.5,6,1,Starbucks
+"2 Columbus Ave, New York, NY 10023,",Starbucks,11432,3,14,1,Starbucks
+"2 West 45th, New York, NY 10036,",Starbucks,10036,3,33,1,Starbucks
+"200 Liberty St, L105, Brookfield Place 1, New York, NY 10006,",Starbucks,10055,3,1,1,Starbucks
+"200 Liberty St, L105, Brookfield Place 1, New York, NY 10006,",Starbucks,11050,2,28,1,Starbucks
+"200 Liberty St, L105, Brookfield Place 1, New York, NY 10006,",Starbucks,11501,3,24,1,Starbucks
+"200 Liberty St, L105, Brookfield Place 1, New York, NY 10006,",Starbucks,11552,4.5,3,1,Starbucks
+"200 Liberty St, L105, Brookfield Place 1, New York, NY 10006,",Starbucks,11577,3.5,42,1,Starbucks
+"200 Madison Ave, New York, NY 10016,",Starbucks,10016,3,52,1,Starbucks
+"201 W. 125Th Street, New York, NY 10027,",Starbucks,10027,2,46,1,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,10031,3,1,1,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,10032,3,94,1,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,10039,3.5,89,1,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,10462,2.5,50,1,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,11003,2.5,15,1,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,11360,2.5,23,1,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,11361,3,101,1,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,11364,4,26,1,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,11426,3,65,1,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,11557,3,19,1,Starbucks
+"2070 Victory Blvd, Staten Island, NY 10314,",Starbucks,11563,2,24,1,Starbucks
+"21 North Park Ave, Rockville Center, NY 11570,",Starbucks,11570,3.5,40,1,Starbucks
+"21 West End Ave, New York, NY 10023,",Starbucks,10023,2.5,24,1,Starbucks
+"21-02 49th Ave, Long Island City, NY 11101,",Starbucks,11101,5,4,1,Starbucks
+"2177 Ralph Ave, Brooklyn, NY 11234,",Starbucks,11234,4,20,1,Starbucks
+"2188 White Plains Rd, Bronx, NY 10462,",Starbucks,10462,3,22,1,Starbucks
+"2188 White Plains Rd, Bronx, NY 10462,",Starbucks,10550,2.5,2,1,Starbucks
+"2195 Frederick Douglas Blvd, New York, NY 10026,",Starbucks,10026,3,41,1,Starbucks
+"22-04 31st St, Astoria, NY 11105,",Starbucks,11105,2.5,91,1,Starbucks
+"2201 Nostrand Ave, Target, Brooklyn, NY 11210,",Starbucks,11210,3,8,1,Starbucks
+"222 Broadway, New York, NY 10007,",Starbucks,10007,2,9,1,Starbucks
+"225 4th Ave, Brooklyn, NY 11215,",Starbucks,11215,4.5,15,1,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,10119,2.5,141,1,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,10166,3,28,1,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,10169,2.5,19,1,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,10173,3.5,10,1,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,11101,3.5,46,1,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,11372,3,93,1,Starbucks
+"229 Seventh Ave, New York, NY 10011,",Starbucks,11418,3,37,1,Starbucks
+"239 Bleecker St, New York, NY 10014,",Starbucks,10014,3,44,1,Starbucks
+"240 Park Ave S, New York, NY 10003,",Starbucks,10003,2.5,47,1,Starbucks
+"245 East 80th St, New York, NY 10075,",Starbucks,10075,3,11,1,Starbucks
+"25 Union Square W, Ste 25, New York, NY 10003,",Starbucks,10003,2.5,75,1,Starbucks
+"2530 Hylan Blvd, Staten Island, NY 10306,",Starbucks,10306,2.5,36,1,Starbucks
+"254-21 Horace Harding Expy, Little Neck, NY 11362,",Starbucks,11362,3.5,62,1,Starbucks
+"26-14 Jackson Ave, Long Island City, NY 11101,",Starbucks,11101,3,36,1,Starbucks
+"2754 Hylan Blvd, Stop & Shop-Staten Island #581, Staten Island, NY 10306,",Starbucks,10306,4,21,1,Starbucks
+"280 Park Ave, New York, NY 10017,",Starbucks,10017,3,18,1,Starbucks
+"2853 Broadway, New York, NY 10025,",Starbucks,10025,3,64,1,Starbucks
+"2900 Veterans Rd W, Target, Staten Island, NY 10309,",Starbucks,10309,2,3,1,Starbucks
+"2929 Broadway, New York, NY 10025,",Starbucks,10025,2.5,59,1,Starbucks
+"296-300 Third Ave, New York, NY 10010,",Starbucks,10010,2,61,1,Starbucks
+"301 W 19th St, New York, NY 10011,",Starbucks,10011,3,11,1,Starbucks
+"316 Rockaway Tpke, Cedarhurst, NY 11516,",Starbucks,11516,2,56,1,Starbucks
+"3165 Broadway, Ste 3167, New York, NY 10027,",Starbucks,10027,3,16,1,Starbucks
+"32-02 Francis Lewis Blvd, Flushing, NY 11358,",Starbucks,11358,3.5,19,1,Starbucks
+"325 Lafayette, Brooklyn, NY 11205,",Starbucks,11205,3.5,12,1,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,10004,3,13,1,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,11204,2.5,77,1,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,11206,3,24,1,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,11210,3,88,1,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,11211,2.5,81,1,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,11222,4,8,1,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,11237,3,8,1,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,11239,2,14,1,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks,11385,3.5,34,1,Starbucks
+"33-42 Hillel Pl, Brooklyn, NY 11210,",Starbucks Reserve,11211,3.5,122,1,Starbucks
+"341 Eastern Pkwy, Brooklyn, NY 11238,",Starbucks,11238,3,47,1,Starbucks
+"345 Hudson St, New York, NY 10014,",Starbucks,10014,3,49,1,Starbucks
+"346 Baychester Ave, Bronx, NY 10475,",Starbucks,10475,2.5,28,1,Starbucks
+"350 Fifth Ave, New York, NY 10118,",Starbucks,10118,2.5,96,1,Starbucks
+"350 Fifth Ave, Ste 130, New York, NY 10001,",Starbucks,10001,2.5,16,1,Starbucks
+"350 West 42nd St, New York, NY 10036,",Starbucks,10036,3.5,39,1,Starbucks
+"3503 Johnson Ave, Bronx, NY 10463,",Starbucks,10463,3,53,1,Starbucks
+"360 Lexington Ave, New York, NY 10017,",Starbucks,10017,2.5,61,1,Starbucks
+"373 5th Ave, New York, NY 10016,",Starbucks,10016,2.5,64,1,Starbucks
+"375 Plandome Rd, Manhasset, NY 11030,",Starbucks,11030,3.5,31,1,Starbucks
+"378 6th Ave, New York, NY 10011,",Starbucks,10011,3,63,1,Starbucks
+"379 Glen Cove Rd, Westbury, NY 11590,",Starbucks,11590,3.5,40,1,Starbucks
+"38 Park Row, Ste 4, New York, NY 10038,",Starbucks,10038,3,47,1,Starbucks
+"383 E 149th St, Bronx, NY 10455,",Starbucks,10455,1.5,2,1,Starbucks
+"393 Third Ave, New York, NY 10016,",Starbucks,10016,3.5,65,1,Starbucks
+"40 W 225Th St, Target, Bronx, NY 10463,",Starbucks,10463,2,17,1,Starbucks
+"400 E 23rd St, New York, NY 10010,",Starbucks,10010,2.5,63,1,Starbucks
+"400 East 90th St, New York, NY 10128,",Starbucks,10128,3,58,1,Starbucks
+"425 Madison Ave, New York, NY 10017,",Starbucks,10017,2.5,40,1,Starbucks
+"440 East Fordham Rd, Fordham Plz, Bronx, NY 10458,",Starbucks,10458,3,54,1,Starbucks
+"444 Ninth St, Brooklyn, NY 11215,",Starbucks,11215,2.5,39,1,Starbucks
+"455 Main St, New York, NY 10044,",Starbucks,10044,3,51,1,Starbucks
+"46-09 Queens Blvd, Sunnyside, NY 11104,",Starbucks,11104,3,95,1,Starbucks
+"47 W 66th St, ABC 77 West Cafe, New York, NY 10023,",Starbucks,10023,3,5,1,Starbucks
+"475 West 57th St, New York, NY 10019,",Starbucks,10019,2.5,48,1,Starbucks
+"476 4th Ave, Brooklyn, NY 11215,",Starbucks,11215,3.5,20,1,Starbucks
+"494 Eighth Ave, New York, NY 10001,",Starbucks,10001,2.5,128,1,Starbucks
+"50 Lexington Ave, New York, NY 10010,",Starbucks,10010,2,57,1,Starbucks
+"51 W Courtyard, JFK - T8 American Air, Jamaica, NY 11430,",Starbucks,11430,2.5,3,1,Starbucks
+"51-06 Northern Blvd, Tower Square, Woodside, NY 11377,",Starbucks,11377,3,53,1,Starbucks
+"525 7th Ave, New York, NY 10018,",Starbucks,10018,2,60,1,Starbucks
+"5296 Kings Plz, Unit 0K2, Main Entrance, Brooklyn, NY 11234,",Starbucks,11234,2.5,11,1,Starbucks
+"543 River Rd, Target, Edgewater, NJ 07020,",Starbucks,10707,3.5,29,1,Starbucks
+"543 River Rd, Target, Edgewater, NJ 07020,",Starbucks,10801,1.5,2,1,Starbucks
+"543 River Rd, Target, Edgewater, NJ 07020,",Starbucks,10804,2.5,30,1,Starbucks
+"55 Broad St, New York, NY 10004,",Starbucks,10004,2.5,82,1,Starbucks
+"55 Broadway, New York, NY 10006,",Starbucks,10006,4,8,1,Starbucks
+"55 Liberty St, New York, NY 10005,",Starbucks,10005,2.5,46,1,Starbucks
+"55 Northern Blvd, Great Neck, NY 11021,",Starbucks,11021,3.5,70,1,Starbucks
+"55 W 52nd St, New York, NY 10019,",Starbucks,10023,2,81,1,Starbucks
+"55 W 52nd St, New York, NY 10019,",Starbucks,10028,3,51,1,Starbucks
+"55 W 52nd St, New York, NY 10019,",Starbucks,10107,2.5,2,1,Starbucks
+"55 W 52nd St, New York, NY 10019,",Starbucks,10474,2,10,1,Starbucks
+"55 W 52nd St, New York, NY 10019,",Starbucks,11102,3,56,1,Starbucks
+"55 W 52nd St, New York, NY 10019,",Starbucks,11432,3,35,1,Starbucks
+"55B Richmond Ter, Staten Island, NY 10302,",Starbucks,10302,4.5,6,1,Starbucks
+"560 Lexington Ave, New York, NY 10022,",Starbucks,10022,2.5,29,1,Starbucks
+"575 Fifth Ave, New York, NY 10017,",Starbucks,10017,2,52,1,Starbucks
+"581 Stewart Ave, Garden City, NY 11530,",Starbucks,11530,3.5,42,1,Starbucks
+"599 Lexington, New York, NY 10022,",Starbucks,10022,3,35,1,Starbucks
+"6 Great Neck Rd, Great Neck, NY 11021,",Starbucks,11021,3,39,1,Starbucks
+"600 Madison Ave, New York, NY 10022,",Starbucks,10022,2,60,1,Starbucks
+"607 Brighton Beach Ave, Brooklyn, NY 11235,",Starbucks,11235,2.5,92,1,Starbucks
+"61 9th Ave, New York, NY 10011,",Starbucks Reserve Roastery New York,10011,4,499,1,Starbucks
+"620 Atlantic Ave, Brooklyn, NY 11217,",Starbucks,11217,3,66,1,Starbucks
+"630 Old Country Rd, Garden City, NY 11530,",Starbucks,11530,2,25,1,Starbucks
+"640 Franklin Ave, Franklin Square, NY 11010,",Starbucks,10040,3,56,1,Starbucks
+"640 Franklin Ave, Franklin Square, NY 11010,",Starbucks,10458,1,1,1,Starbucks
+"640 Franklin Ave, Franklin Square, NY 11010,",Starbucks,10463,3,1,1,Starbucks
+"640 Franklin Ave, Franklin Square, NY 11010,",Starbucks,11010,2.5,74,1,Starbucks
+"640 Franklin Ave, Franklin Square, NY 11010,",Starbucks,11040,3,78,1,Starbucks
+"640 Franklin Ave, Franklin Square, NY 11010,",Starbucks,11552,2,28,1,Starbucks
+"640 Franklin Ave, Franklin Square, NY 11010,",Starbucks,11561,3.5,48,1,Starbucks
+"653 Hillside Ave, Stop & Shop-New Hyde Park #570, New Hyde Park, NY 11040,",Starbucks,11040,5,1,1,Starbucks
+"685 Third Ave, New York, NY 10017,",Starbucks,10017,3,39,1,Starbucks
+"7103 80th St, The Shops At Atlas Park, Glendale, NY 11385,",Starbucks,11385,2.5,51,1,Starbucks
+"715 North Ave, Iona College - Student Union, New Rochelle, NY 10801,",Starbucks,10801,2,6,1,Starbucks
+"72 Grove St, New York, NY 10014,",Starbucks,10014,3,216,1,Starbucks
+"725 5th Ave, Trump Tower, New York, NY 10022,",Starbucks,10022,2.5,39,1,Starbucks
+"726 North Ave, New Rochelle, NY 10801,",Starbucks,10801,3.5,14,1,Starbucks
+"750 Seventh Ave, New York, NY 10019,",Starbucks,10019,2,48,1,Starbucks
+"76 9Th Ave, New York, NY 10011,",Starbucks,10011,2.5,55,1,Starbucks
+"80 Delancey St, New York, NY 10002,",Starbucks,10002,2.5,137,1,Starbucks
+"8000 Cooper Ave, Glendale, NY 11385,",Starbucks,11385,3.5,3,1,Starbucks
+"803 W 181st St, New York, NY 10033,",Starbucks,10033,3,85,1,Starbucks
+"83 West 125th St, New York, NY 10027,",Starbucks,10027,2,61,1,Starbucks
+"875 Third Ave, New York, NY 10022,",Starbucks,10022,2.5,41,1,Starbucks
+"9202 Third Ave, Brooklyn, NY 11209,",Starbucks,11209,3.5,64,1,Starbucks
+"First Floor 3900 Waldo Ave, Manhattan College - Kelly Commons, Bronx, NY 10463,",Starbucks,10463,3,3,1,Starbucks
+"Hms Host - Terminal One Jfk Airport Buil, JFK - T1 Evenings, Jamaica, NY 11430,",Starbucks,11430,2.5,21,1,Starbucks
+"Jfk Access Rd, Jamaica, NY 11430,",Starbucks,11430,2.5,2,1,Starbucks
+"Jfk Airport N, T8, Queens, NY 11430,",Starbucks,11430,2,1,1,Starbucks
+"Jfk Airport, JFK T8 North, Jamaica, NY 11430,",Starbucks,11430,2.5,8,1,Starbucks
+"Jfk International Airport, JFK T5 Gate 22, Jamaica, NY 11430,",Starbucks,11430,2,67,1,Starbucks
+"Njtp Mm 116, NJ TP Vince Lombardi Travel Plaza, East Ridgefield, NJ 07657,",Starbucks,10538,3,16,1,Starbucks
+"Njtp Mm 116, NJ TP Vince Lombardi Travel Plaza, East Ridgefield, NJ 07657,",Starbucks,11510,3.5,20,1,Starbucks
+"Njtp Mm 116, NJ TP Vince Lombardi Travel Plaza, East Ridgefield, NJ 07657,",Starbucks,11520,2,2,1,Starbucks
+"Njtp Mm 116, NJ TP Vince Lombardi Travel Plaza, East Ridgefield, NJ 07657,",Starbucks,11553,3.5,30,1,Starbucks
+"Njtp Mm 116, NJ TP Vince Lombardi Travel Plaza, East Ridgefield, NJ 07657,",Starbucks,11558,2,19,1,Starbucks
+"Njtp Mm 116, NJ TP Vince Lombardi Travel Plaza, East Ridgefield, NJ 07657,",Starbucks,11572,3,33,1,Starbucks
+"Njtp Mm 116, NJ TP Vince Lombardi Travel Plaza, East Ridgefield, NJ 07657,",Starbucks,11590,3,11,1,Starbucks
+"Ny Jfk INternational Airport, JFK T1 pre security food court, Jamaica, NY 11430,",Starbucks,11430,2.5,15,1,Starbucks
+"Ny Jfk INternational Airport, Terminal 3, Jamaica, NY 11430,",Starbucks,11430,2,14,1,Starbucks

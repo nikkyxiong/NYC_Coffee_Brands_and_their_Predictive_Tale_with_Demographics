@@ -1,0 +1,239 @@
+---
+title: "Coffee Rating & NYC Demographics by Zip Code"
+author: "Nikky Xiong"
+date: "3/22/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(readr)
+library(dplyr)
+
+nyc_demo <- read_csv("nyc_zip_demo.csv")
+coffee_zip <- read_csv("coffee_zip.csv")
+df <- left_join(coffee_zip, nyc_demo)
+```
+
+# visualization 
+
+```{r, warning=FALSE, message=FALSE}
+library(ggthemes)
+library(ggplot2)
+library(tidyr)
+
+pc1 <- ggplot(df, aes(x = Total_Income, y = Avg_rating, 
+                          color = Name)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Total Income') + 
+    ylab('Average Rating for Coffee Shops') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Total Income vs Average Rating for Coffee') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97")) +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc1
+```
+
+```{r, warning=FALSE, message=FALSE}
+pc2 <- ggplot(df, aes(x = Mean_Income, y = Avg_rating, 
+                          color = Name)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Mean Income') + 
+    ylab('Average Rating for Coffee Shops') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Mean Income vs Average Rating for Coffee') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97")) +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc2
+```
+
+```{r, warning=FALSE, message=FALSE}
+pc3 <- ggplot(df, aes(x = Population, y = Avg_rating, 
+                          color = Name)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Population') + 
+    ylab('Average Rating for Coffee Shops') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Population vs Average Rating for Coffee') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97")) +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc3
+```
+
+# linear regression
+
+```{r, warning=FALSE, message=FALSE}
+coffee_lm <- df
+
+coffee_lm$Name[coffee_lm$Name == "Dunkin'"] <-  0
+coffee_lm$Name[coffee_lm$Name == "Starbucks"] <-  1
+coffee_lm$Name[coffee_lm$Name == "Blue Bottle"] <-  2
+
+coffee_sb <- coffee_lm %>% filter(Name == 1)
+coffee_dd <- coffee_lm %>% filter(Name == 0)
+coffee_bb <- coffee_lm %>% filter(Name == 2)
+```
+
+### Raing vs Total Income
+
+```{r}
+lm <- lm(Avg_rating ~ Total_Income,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Total_Income,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Total_Income,
+         data = coffee_dd)
+summary(lm)
+```
+
+### Raing vs Mean Income
+
+```{r}
+lm <- lm(Avg_rating ~ Mean_Income,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Mean_Income,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Mean_Income,
+         data = coffee_bb)
+summary(lm)
+```
+
+### Raing vs Population
+
+```{r}
+lm <- lm(Avg_rating ~ Population,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Population,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Population,
+         data = coffee_bb)
+summary(lm)
+```
+
+### add interaction term
+
+```{r}
+lm <- lm(Avg_rating ~ Population*Mean_Income,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Population*Mean_Income,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Population*Mean_Income,
+         data = coffee_bb)
+summary(lm)
+```
+
+### More
+
+```{r}
+lm <- lm(Avg_rating ~ Population + Mean_Income,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Population + Mean_Income,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Population + Mean_Income,
+         data = coffee_bb)
+summary(lm)
+```
+
+### More 2.0
+
+```{r}
+lm <- lm(Avg_rating ~ Population + Mean_Income +
+             Avg_review_count,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Population + Mean_Income +
+             Avg_review_count,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Population + Mean_Income +
+             Avg_review_count,
+         data = coffee_bb)
+summary(lm)
+```
+
+### More 3.0
+
+```{r}
+lm <- lm(Avg_rating ~ Population*Mean_Income +
+             Avg_review_count,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Population*Mean_Income +
+             Avg_review_count,
+         data = coffee_bb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Population*Mean_Income +
+             Avg_review_count,
+         data = coffee_sb)
+summary(lm)
+```

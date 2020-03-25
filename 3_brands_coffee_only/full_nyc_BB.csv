@@ -1,0 +1,36 @@
+full_address,name,zip_code,ave_rating,ave_review_count,num,NAME
+"1 Rockefeller Plz, Concourse Level, Ste D, New York, NY 10020,",Blue Bottle Coffee,10020,4.5,424,5,BB
+"101 University Pl, New York, NY 10003,",Blue Bottle Coffee,10003,4,38,5,BB
+"150 Greenwich St, New York, NY 10007,",Blue Bottle Coffee,10007,4.5,102,5,BB
+"20 Hudson Yards, Ste 228, New York, NY 10001,",Blue Bottle Coffee,10001,3.5,42,5,BB
+"257 Park Ave S, New York, NY 10167,",Blue Bottle Coffee,10167,4,16,5,BB
+"450 W 15th St, New York, NY 10014,",Blue Bottle Coffee,10014,4,210,5,BB
+"54 W 40th St, New York, NY 10018,",Blue Bottle Coffee,10018,4,267,5,BB
+"71 Clinton St, New York, NY 10002,",Blue Bottle Coffee,10002,4,60,5,BB
+"10 E 53rd St, New York, NY 10022,",Blue Bottle Coffee,10022,4,43,4,BB
+"10th Ave & W 16th St, The High Line, New York, NY 10014,",Blue Bottle Coffee,10014,4,97,4,BB
+"160 Berry St, Brooklyn, NY 11249,",Blue Bottle Coffee,11249,4,523,4,BB
+"279 Amsterdam Ave, New York, NY 10023,",Blue Bottle Coffee,10023,3.5,27,4,BB
+"396 Broadway, New York, NY 10013,",Blue Bottle Coffee,10013,3.5,6,4,BB
+"54 W 40th St, New York, NY 10018,",Blue Bottle Coffee,10003,3,8,4,BB
+"54 W 40th St, New York, NY 10018,",Blue Bottle Coffee,10013,3.875,6,4,BB
+"76 N 4th Street, Store A, Brooklyn, NY 11249,",Blue Bottle Coffee,11249,3.5,37,4,BB
+"85 Dean St, Brooklyn, NY 11201,",Blue Bottle Coffee,11201,4.5,139,4,BB
+"1 Rockefeller Plz, Concourse level, Ste N, New York, NY 10020,",Blue Bottle Coffee,10020,4,24,3,BB
+"60 E 42nd St, Ste 140, New York, NY 10165,",Blue Bottle Coffee,10165,4,39,3,BB
+"203 7th Ave, Brooklyn, NY 11215,",Blue Bottle Coffee,11215,3,57,2,BB
+"279 McKibbin St, Brooklyn, NY 11206,",Blue Bottle Coffee,11206,3.5,15,2,BB
+"54 W 40th St, New York, NY 10018,",Blue Bottle Coffee,10105,3,5,2,BB
+"1345 Avenue Of The Americas, New York, NY 10105,",Blue Bottle Coffee,10105,3,5,1,BB
+"54 W 40th St, New York, NY 10018,",Blue Bottle Coffee,10020,4,24,1,BB
+"54 W 40th St, New York, NY 10018,",Blue Bottle Coffee,10165,4,39,1,BB
+"54 W 40th St, New York, NY 10018,",Blue Bottle Coffee,11201,4.5,139,1,BB
+"54 W 40th St, New York, NY 10018,",Blue Bottle Coffee,11206,3.5,15,1,BB
+"54 W 40th St, New York, NY 10018,",Blue Bottle Coffee,11215,3,57,1,BB
+"85 Dean St, Brooklyn, NY 11201,",Blue Bottle Coffee,10003,3,8,1,BB
+"85 Dean St, Brooklyn, NY 11201,",Blue Bottle Coffee,10013,4,6,1,BB
+"85 Dean St, Brooklyn, NY 11201,",Blue Bottle Coffee,10020,4,24,1,BB
+"85 Dean St, Brooklyn, NY 11201,",Blue Bottle Coffee,10022,4,43,1,BB
+"85 Dean St, Brooklyn, NY 11201,",Blue Bottle Coffee,10023,3.5,27,1,BB
+"85 Dean St, Brooklyn, NY 11201,",Blue Bottle Coffee,10105,3,5,1,BB
+"85 Dean St, Brooklyn, NY 11201,",Blue Bottle Coffee,10165,4,39,1,BB
