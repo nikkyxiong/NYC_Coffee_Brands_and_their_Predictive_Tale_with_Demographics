@@ -14,12 +14,12 @@ knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(tidyverse)
 
-nyc_coffee <- read_csv("./raw_data/coffee_in_five_boro/nyc_coffee.csv")
-brooklyn_coffee <- read_csv("./raw_data/coffee_in_five_boro/Brooklyn_coffee.csv")
-bronx_coffee <- read_csv("./raw_data/coffee_in_five_boro/Bronx_coffee.csv")
-manhattan_coffee <- read_csv("./raw_data/coffee_in_five_boro/manhattan_coffee.csv")
-statenisland_coffee <- read_csv("./raw_data/coffee_in_five_boro/StatenIsland_coffee.csv")
-queens_coffee <- read_csv("./raw_data/coffee_in_five_boro/Queens_coffee.csv")
+nyc_coffee <- read_csv("nyc_Dunkin.csv")
+brooklyn_coffee <- read_csv("Brooklyn_Dunkin.csv")
+bronx_coffee <- read_csv("Bronx_Dunkin.csv")
+manhattan_coffee <- read_csv("manhattan_Dunkin.csv")
+statenisland_coffee <- read_csv("StatenIsland_Dunkin.csv")
+queens_coffee <- read_csv("Queens_Dunkin.csv")
 ```
 
 # Assign Boroughs
@@ -72,7 +72,7 @@ full_ids_df %>%
   filter(duplicated.full_ids. == TRUE)
 
 non_dup <- as.character(full_ids_df$full_ids[full_ids_df$duplicated.full_ids. == FALSE])
-nyc_restaurants %>%
+nyc_coffee %>%
   filter(id %in% non_dup)
 all_nyc %>%
   filter(id %in% non_dup)
@@ -117,9 +117,24 @@ all_nyc <- all_nyc%>%
 summary(all_nyc$price_num)
 ```
 
+```{r}
+dd_nyc <- all_nyc %>% 
+  group_by(full_address, name, zip_code) %>% 
+  summarize(ave_rating = mean(rating, na.rm = T),
+           ave_review_count = mean(review_count, na.rm = T),
+           num = n()) %>% 
+    arrange(desc(num)) %>% 
+  mutate(NAME = case_when(
+      str_detect(name, "^Dunkin") ~ "DD",
+      TRUE ~ name
+      )) %>% 
+  filter(NAME == "DD")
 
-So now we have 4033 unique restaurants
+write_csv(dd_nyc, "./full_nyc_Dunkin.csv", na = "NA" )
+```
+
 
 ```{r}
-write_csv(all_nyc, "./full_nyc_coffee.csv", na = "NA" )
+table(dd_nyc$borough)
 ```
+
