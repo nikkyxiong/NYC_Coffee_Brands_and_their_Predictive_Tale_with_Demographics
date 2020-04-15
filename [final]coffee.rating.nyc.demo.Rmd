@@ -374,6 +374,170 @@ lm <- lm(Avg_rating ~ Population,
 summary(lm)
 ```
 
+### Rating vs Gender
+
+#### SB
+
+```{r}
+lm <- lm(Avg_rating ~ Women_pct,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Men_pct,
+         data = coffee_sb)
+summary(lm)
+```
+
+#### DD
+
+```{r}
+lm <- lm(Avg_rating ~ Women_pct,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Men_pct,
+         data = coffee_dd)
+summary(lm)
+```
+
+#### BB
+
+```{r}
+lm <- lm(Avg_rating ~ Women_pct,
+         data = coffee_bb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Men_pct,
+         data = coffee_bb)
+summary(lm)
+```
+
+### Rating vs Race
+
+#### SB
+
+```{r}
+lm <- lm(Avg_rating ~ White_pct,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Asian_pct,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Black_pct,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Native_pct,
+         data = coffee_sb)
+summary(lm)
+```
+
+#### DD
+
+```{r}
+lm <- lm(Avg_rating ~ White_pct,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Asian_pct,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Black_pct,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Native_pct,
+         data = coffee_dd)
+summary(lm)
+```
+
+#### BB
+
+```{r}
+lm <- lm(Avg_rating ~ White_pct,
+         data = coffee_bb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Asian_pct,
+         data = coffee_bb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Black_pct,
+         data = coffee_bb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Native_pct,
+         data = coffee_bb)
+summary(lm)
+```
+
+### Rating vs Poverty
+
+```{r}
+lm <- lm(Avg_rating ~ Poverty_pct,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Poverty_pct,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Poverty_pct,
+         data = coffee_bb)
+summary(lm)
+```
+
+### Rating vs Unemployment
+
+```{r}
+lm <- lm(Avg_rating ~ Unemployment_pct,
+         data = coffee_sb)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Unemployment_pct,
+         data = coffee_dd)
+summary(lm)
+```
+
+```{r}
+lm <- lm(Avg_rating ~ Unemployment_pct,
+         data = coffee_bb)
+summary(lm)
+```
+
 ### add interaction term
 
 ```{r}
@@ -457,5 +621,12 @@ summary(lm)
 lm <- lm(Avg_rating ~ Population*Mean_Income +
              Avg_review_count,
          data = coffee_sb)
+summary(lm)
+```
+
+### More 4.0
+
+```{r}
+lm <- lm(Avg_rating ~ Population + Mean_Income + Avg_review_count + Men_pct + White_pct + Asian_pct + Black_pct + Poverty_pct + Unemployment_pct, data = coffee_sb)
 summary(lm)
 ```
