@@ -14,8 +14,11 @@ library(readr)
 library(dplyr)
 
 nyc_demo <- read_csv("nyc_zip_demo.csv")
+nyc_demo_more <- read_csv('raw_data/nyc_zip_demographics.csv')
+nyc_demo <- left_join(nyc_demo, nyc_demo_more,by = c("Zipcode" = "ZIPCODE"))
 coffee_zip <- read_csv("coffee_zip.csv")
-df <- left_join(coffee_zip, nyc_demo)
+df <- left_join(coffee_zip, nyc_demo) %>% 
+    mutate(Women_pct = 100 - Men_pct)
 ```
 
 # visualization 
@@ -78,18 +81,237 @@ pc3 <- ggplot(df, aes(x = Population, y = Avg_rating,
 pc3
 ```
 
+## clean up data and do more visualization with demographics
+
+### poverty
+
+```{r, warning=FALSE, message=FALSE}
+pc6 <- ggplot(df, aes(x = Poverty_pct, y = Avg_rating, 
+                          color = Name)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Poverty Percentage') + 
+    ylab('Average Rating for Coffee Shops') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Poverty Percentage vs Average Rating for Coffee') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97")) +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc6
+```
+
+### unemployment
+
+```{r, warning=FALSE, message=FALSE}
+pc7 <- ggplot(df, aes(x = Unemployment_pct, y = Avg_rating, 
+                          color = Name)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Unemployment Percentage') + 
+    ylab('Average Rating for Coffee Shops') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Unemployment Percentage vs Average Rating for Coffee') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97")) +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc7
+```
+
+```{r}
+pc8 <- ggplot(df, aes(x = Unemployment_pct, y = Poverty_pct, 
+                          color = Name)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Unemployment Percentage') + 
+    ylab('Poverty Percentage') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Unemployment Percentage vs Poverty Percentage') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97")) +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc8
+```
+
 # linear regression
 
 ```{r, warning=FALSE, message=FALSE}
 coffee_lm <- df
 
-coffee_lm$Name[coffee_lm$Name == "Dunkin'"] <-  0
-coffee_lm$Name[coffee_lm$Name == "Starbucks"] <-  1
-coffee_lm$Name[coffee_lm$Name == "Blue Bottle"] <-  2
+coffee_lm$Name[coffee_lm$Name == "Dunkin'"] <- 0
+coffee_lm$Name[coffee_lm$Name == "Starbucks"] <- 1
+coffee_lm$Name[coffee_lm$Name == "Blue Bottle"] <- 2
 
 coffee_sb <- coffee_lm %>% filter(Name == 1)
 coffee_dd <- coffee_lm %>% filter(Name == 0)
 coffee_bb <- coffee_lm %>% filter(Name == 2)
+```
+
+### gender for SB
+
+```{r}
+df_gather <- coffee_sb %>% 
+  gather(Men_pct, Women_pct, 
+         key = gender, value = gender_value) 
+```
+
+```{r, warning=FALSE, message=FALSE}
+pc_race <- ggplot(df_gather, aes(x = gender_value, y = Avg_rating,
+                                 color = gender)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Gender Percentage') + 
+    ylab('Average Rating for Starbucks') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Gender Percentage vs Average Rating for Starbucks') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97"
+                                 )) +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc_race
+```
+
+### gender for DD
+
+```{r}
+df_gather <- coffee_dd %>% 
+  gather(Men_pct, Women_pct, 
+         key = gender, value = gender_value) 
+```
+
+```{r, warning=FALSE, message=FALSE}
+pc_race <- ggplot(df_gather, aes(x = gender_value, y = Avg_rating,
+                                 color = gender)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Gender Percentage') + 
+    ylab('Average Rating for the Dunkin') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Gender Percentage vs Average Rating for the Dunkin') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97"
+                                 )) +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc_race
+```
+
+### gender for BB
+
+```{r}
+df_gather <- coffee_bb %>% 
+  gather(Men_pct, Women_pct, 
+         key = gender, value = gender_value) 
+```
+
+```{r, warning=FALSE, message=FALSE}
+pc_race <- ggplot(df_gather, aes(x = gender_value, y = Avg_rating,
+                                 color = gender)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Gender Percentage') + 
+    ylab('Average Rating for Blue Bottle') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Gender Percentage vs Average Rating for Blue Bottle') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97"
+                                 )) +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc_race
+```
+
+### race pct for SB
+
+```{r}
+df_gather <- coffee_sb %>% 
+  gather(White_pct, Black_pct, Native_pct, Asian_pct,
+         key = race, value = race_value) 
+```
+
+```{r, warning=FALSE, message=FALSE}
+pc_race <- ggplot(df_gather, aes(x = race_value, y = Avg_rating, 
+                          color = race)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Poverty Percentage') + 
+    ylab('Average Rating for Starbucks') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Poverty Percentage vs Average Rating for Starbucks') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97", "#ABA9A9")) +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc_race
+```
+
+### race pct for DD
+
+```{r}
+df_gather <- coffee_dd %>% 
+  gather(White_pct, Black_pct, Native_pct, Asian_pct,
+         key = race, value = race_value) 
+```
+
+```{r, warning=FALSE, message=FALSE}
+pc_race <- ggplot(df_gather, aes(x = race_value, y = Avg_rating, 
+                          color = race)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Poverty Percentage') + 
+    ylab('Average Rating for the Dunkin') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Poverty Percentage vs Average Rating for the Dunkin') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97", "#ABA9A9")) +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc_race
+```
+
+### race pct for BB
+
+```{r}
+df_gather <- coffee_bb %>% 
+  gather(White_pct, Black_pct, Native_pct, Asian_pct,
+         key = race, value = race_value) 
+```
+
+```{r, warning=FALSE, message=FALSE}
+pc_race <- ggplot(df_gather, aes(x = race_value, y = Avg_rating, 
+                          color = race)) + 
+    geom_point(alpha = 0.8, radius = 0.5) +
+    xlab('Poverty Percentage') + 
+    ylab('Average Rating for Blue Bottle') + 
+    labs(caption = 'Data Source: Yelp') +
+    geom_smooth(method=lm, se=FALSE, linetype="dashed") +
+    ggtitle('Poverty Percentage vs Average Rating for Blue Bottle') +
+    theme_linedraw() +
+    scale_color_manual(values = c("#34afd1", "#f09a56", 
+                                 "#87dc97", "#ABA9A9")) +
+    theme(plot.title = element_text(size=12, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc_race
 ```
 
 ### Raing vs Total Income
