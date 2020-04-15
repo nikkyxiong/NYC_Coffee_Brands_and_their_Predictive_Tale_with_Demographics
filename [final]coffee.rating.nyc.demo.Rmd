@@ -248,11 +248,11 @@ df_gather <- coffee_sb %>%
 pc_race <- ggplot(df_gather, aes(x = race_value, y = Avg_rating, 
                           color = race)) + 
     geom_point(alpha = 0.8, radius = 0.5) +
-    xlab('Poverty Percentage') + 
+    xlab('Race Percentage') + 
     ylab('Average Rating for Starbucks') + 
     labs(caption = 'Data Source: Yelp') +
     geom_smooth(method=lm, se=FALSE, linetype="dashed") +
-    ggtitle('Poverty Percentage vs Average Rating for Starbucks') +
+    ggtitle('Race Percentage vs Average Rating for Starbucks') +
     theme_linedraw() +
     scale_color_manual(values = c("#34afd1", "#f09a56", 
                                  "#87dc97", "#ABA9A9")) +
@@ -274,11 +274,11 @@ df_gather <- coffee_dd %>%
 pc_race <- ggplot(df_gather, aes(x = race_value, y = Avg_rating, 
                           color = race)) + 
     geom_point(alpha = 0.8, radius = 0.5) +
-    xlab('Poverty Percentage') + 
+    xlab('Race Percentage') + 
     ylab('Average Rating for the Dunkin') + 
     labs(caption = 'Data Source: Yelp') +
     geom_smooth(method=lm, se=FALSE, linetype="dashed") +
-    ggtitle('Poverty Percentage vs Average Rating for the Dunkin') +
+    ggtitle('Race Percentage vs Average Rating for the Dunkin') +
     theme_linedraw() +
     scale_color_manual(values = c("#34afd1", "#f09a56", 
                                  "#87dc97", "#ABA9A9")) +
@@ -300,11 +300,11 @@ df_gather <- coffee_bb %>%
 pc_race <- ggplot(df_gather, aes(x = race_value, y = Avg_rating, 
                           color = race)) + 
     geom_point(alpha = 0.8, radius = 0.5) +
-    xlab('Poverty Percentage') + 
+    xlab('Race Percentage') + 
     ylab('Average Rating for Blue Bottle') + 
     labs(caption = 'Data Source: Yelp') +
     geom_smooth(method=lm, se=FALSE, linetype="dashed") +
-    ggtitle('Poverty Percentage vs Average Rating for Blue Bottle') +
+    ggtitle('Race Percentage vs Average Rating for Blue Bottle') +
     theme_linedraw() +
     scale_color_manual(values = c("#34afd1", "#f09a56", 
                                  "#87dc97", "#ABA9A9")) +
