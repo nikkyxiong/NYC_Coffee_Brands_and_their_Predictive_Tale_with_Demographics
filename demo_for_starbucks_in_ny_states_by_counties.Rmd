@@ -1,0 +1,182 @@
+---
+title: "Demo for Starbucks in NY States by Counties"
+author: "Nikky Xiong"
+date: "3/5/2020"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# This is a demo EDA for the number of Starbucks in the New York State and the demographics of surrounding neighborhood by counties. Data from https://www.kaggle.com/harrisothman/starbucks-stores-and-new-york-county-demographics.
+
+```{r}
+library(readr)
+df <- read.csv('raw_data/num_starbucks_nyc.csv')
+```
+
+## Overview of the Dataset
+
+```{r, message=FALSE, warning=FALSE}
+library(dplyr)
+df %>% summary()
+```
+
+## Sorted by Number of Starbucks Stores in the New York State
+
+```{r}
+df %>% arrange(desc(NbShops))
+```
+
+## Scatter plots to view the relationship between the number of stores and the demographic factors in the county
+
+```{r}
+library(ggplot2)
+library(ggthemes)
+library(ggrepel)
+
+# Number of Starbucks stores vs Population
+pc1 <- ggplot(df, aes(x = Population, y = NbShops)) + 
+    geom_point() +
+    xlab('Population') + 
+    ylab('Number of Starbucks Stores in the County') + 
+    labs(caption = 'Kaggle') +
+    ggtitle('Starbucks Number vs Local Population') +
+    theme_fivethirtyeight() +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8)) 
+pc1
+
+# Number of Starbucks stores vs Density of Population
+pc2 <- ggplot(df, aes(x = DensityOfPopulation, y = NbShops)) + 
+    geom_point() +
+    xlab('Density of Population') + 
+    ylab('Number of Starbucks Stores in the County') + 
+    labs(caption = 'Kaggle') +
+    ggtitle('Starbucks Number vs Local Population Density') +
+    theme_fivethirtyeight() +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5))
+pc2
+
+# Number of Starbucks stores vs Average Income
+pc3 <- ggplot(df, aes(x = AverageIncome, y = NbShops)) + 
+    geom_point() +
+    xlab('Average Income') + 
+    ylab('Number of Starbucks Stores in the County') + 
+    labs(caption = 'Kaggle') +
+    ggtitle('Starbucks Number vs Local Average Income') +
+    theme_fivethirtyeight() +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc3
+
+# Number of Starbucks stores vs Median Age
+pc4 <- ggplot(df, aes(x = MedianAge, y = NbShops)) + 
+    geom_point() +
+    xlab('Median Age') + 
+    ylab('Number of Starbucks Stores in the County') + 
+    labs(caption = 'Kaggle') +
+    ggtitle('Starbucks Number vs Local Median Age') +
+    theme_fivethirtyeight() +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc4
+
+# Number of Starbucks stores vs Density of Shops
+pc5 <- ggplot(df, aes(x = DensityOfShops, y = NbShops)) + 
+    geom_point() +
+    xlab('Density of Shops') + 
+    ylab('Number of Starbucks Stores in the County') + 
+    labs(caption = 'Kaggle') +
+    ggtitle('Starbucks Number vs Local Shop Density') +
+    theme_fivethirtyeight() +
+    theme(plot.title = element_text(size=14, face="bold", hjust = 0.5),
+          legend.text = element_text(size=8),
+          legend.title = element_text(size=8))
+pc5
+```
+
+## Linear regression to investigate the relationship between
+
+```{r}
+lm <- lm(NbShops ~ Population + DensityOfPopulation +
+             AverageIncome + MedianAge + DensityOfShops, data = df)
+summary(lm)
+```
+
+
+```{r}
+lm2 <- lm(NbShops ~ Population, data = df)
+summary(lm2)
+```
+
+```{r}
+lm3 <- lm(NbShops ~ DensityOfPopulation, data = df)
+summary(lm3)
+```
+
+```{r}
+lm4 <- lm(NbShops ~ AverageIncome, data = df)
+summary(lm4)
+```
+
+```{r}
+lm5 <- lm(NbShops ~ MedianAge, data = df)
+summary(lm5)
+```
+
+## Machine Learning models to predict the number of Starbucks stores by the unsupervised learning method (GLM)
+
+```{r, warning=FALSE, message=FALSE}
+library(caret)
+
+ctrl <- trainControl(method = "cv", number = 10)
+set.seed(12345)
+in_training <- createDataPartition(y = df$NbShops, 
+                                   p = 0.8, list = FALSE)
+training <- df[in_training, ]
+testing <- df[-in_training, ]
+Grid <- expand.grid(.lambda = seq(.05, 1, length = 10),
+                    .alpha = seq(.05, 1, length = 10))
+```
+
+```{r}
+ols1 <- lm(NbShops ~ Population + DensityOfPopulation +
+             AverageIncome + MedianAge + DensityOfShops, 
+           data = training)
+ols2 <- lm(NbShops ~ DensityOfPopulation + Population + AverageIncome, 
+           data = training)
+ols3 <- lm(NbShops ~ DensityOfPopulation + Population, 
+           data = training)
+```
+
+```{r}
+mod1 <- train(formula(ols1), data = training, method = "glmnet", 
+               trControl = ctrl, tuneGrid = Grid)
+y_hat_mod1 <- predict(mod1, newdata = testing)
+defaultSummary(data.frame(obs = testing$NbShops, 
+                          pred = y_hat_mod1))
+```
+
+```{r}
+mod2 <- train(formula(ols2), data = training, method = "glmnet", 
+               trControl = ctrl, tuneGrid = Grid)
+y_hat_mod2 <- predict(mod2, newdata = testing)
+defaultSummary(data.frame(obs = testing$NbShops, 
+                          pred = y_hat_mod1))
+```
+
+```{r}
+mod3 <- train(formula(ols3), data = training, method = "glmnet", 
+               trControl = ctrl, tuneGrid = Grid)
+y_hat_mod3 <- predict(mod3, newdata = testing)
+defaultSummary(data.frame(obs = testing$NbShops, 
+                          pred = y_hat_mod1))
+```
+
