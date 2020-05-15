@@ -1,0 +1,236 @@
+---
+title: "Coffee Brand Prediction by NYC Demographics"
+author: "Nikky Xiong"
+date: "05/14/2020"
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(readr)
+library(dplyr)
+library(broom)
+
+nyc_demo <- read_csv("nyc_zip_demo.csv")
+nyc_demo_more <- read_csv('raw_data/nyc_zip_demographics.csv')
+nyc_demo <- left_join(nyc_demo, nyc_demo_more,by = c("Zipcode" = "ZIPCODE"))
+coffee_zip <- read_csv("coffee_zip.csv")
+df <- left_join(coffee_zip, nyc_demo) %>% 
+    mutate(Women_pct = 100 - Men_pct)
+```
+
+# linear regression
+
+```{r, warning=FALSE, message=FALSE}
+coffee_lm <- df
+
+coffee_lm$Name[coffee_lm$Name == "Dunkin'"] <- 0
+coffee_lm$Name[coffee_lm$Name == "Starbucks"] <- 1
+coffee_lm$Name[coffee_lm$Name == "Blue Bottle"] <- 2
+
+coffee_sb <- coffee_lm %>% filter(Name == 1)
+coffee_dd <- coffee_lm %>% filter(Name == 0)
+coffee_bb <- coffee_lm %>% filter(Name == 2)
+```
+
+# Supervised Machine Learning
+
+```{r}
+coffee_ml <- coffee_lm %>% 
+  filter(coffee_lm$Name == 1 | coffee_lm$Name == 0)
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(caret)
+
+coffee_ml$Name <- factor(coffee_ml$Name, 
+                     labels = c("Starbucks", "DD"), 
+                     levels = 1:0) 
+set.seed(12345)
+in_train <- createDataPartition(y = coffee_ml$Name, 
+                                p = 0.8, list = FALSE)
+training <- coffee_ml[ in_train, ]
+testing  <- coffee_ml[-in_train, ]
+```
+
+## logit
+
+```{r}
+logit <- glm(Name ~ Avg_rating + Avg_review_count + Population +
+               White_tot + Asian_tot + Black_tot, 
+             data = training, family = binomial(link = "logit"))
+
+y_hat_logit <- predict(logit, newdata = testing, type = "response")
+z_logit <- factor(y_hat_logit > 0.5, 
+                  levels = c(TRUE, FALSE), 
+                  labels = c("Starbucks", "DD"))
+
+confusionMatrix(z_logit, reference = testing$Name)
+```
+
+## LDA
+
+```{r}
+LDA <- train(Name ~ Avg_rating + Avg_review_count + Population +
+               White_tot + Asian_tot + Black_tot, 
+             data = training, method = "lda", 
+             reProcess = c("center", "scale"))
+z <- predict(LDA, newdata = testing)
+confusionMatrix(z, testing$Name)
+```
+
+## QDA
+
+```{r}
+QDA <- train(Name ~ Avg_rating + Avg_review_count + Population +
+               White_tot + Asian_tot + Black_tot, 
+             data = training, method = "qda", 
+             preProcess = c("center", "scale"))
+
+z_QDA <- predict(QDA, newdata = testing)
+
+confusionMatrix(z_QDA, reference = testing$Name)
+```
+
+## PLSDA
+
+```{r}
+ctrl_PLSDA <- trainControl(method = "repeatedcv", repeats = 2, 
+                     classProbs = TRUE, summaryFunction = twoClassSummary)
+PLSDA_grid <- expand.grid(.ncomp = 1:2)
+
+PLSDA <- train(Name ~ Avg_rating + Avg_review_count + Population +
+               White_tot + Asian_tot + Black_tot, 
+               data = training, method = "pls", 
+               preProcess = c("center", "scale"), metric = "ROC", 
+               trControl = ctrl_PLSDA, tuneGrid = PLSDA_grid)
+
+z_PLSDA <- predict(PLSDA, newdata = testing)
+
+confusionMatrix(z_PLSDA, reference = testing$Name)
+```
+
+## Nearest Shrunken Centroids
+
+```{r}
+ctrl_NSC <- trainControl(method = "repeatedcv", repeats = 3, 
+                     classProbs = TRUE, summaryFunction = twoClassSummary)
+grid_NSC <- data.frame(.threshold = 0:25)
+
+NSC <- train(Name ~ Avg_rating + Avg_review_count + Population +
+               White_tot + Asian_tot + Black_tot, 
+             data = training, method = "pam", 
+             preProcess = c("center", "scale"), metric = "ROC", 
+             trControl = ctrl_NSC, tuneGrid = grid_NSC)
+
+z_NSC <- predict(NSC, newdata = testing) 
+confusionMatrix(z_NSC, reference = testing$Name)
+```
+
+## Boosting
+
+```{r}
+gbmControl = trainControl(method="cv", 
+                          number=5, returnResamp = "all")
+
+gbm = train(Name ~ Avg_rating + Avg_review_count + Population +
+               White_tot + Asian_tot + Black_tot,
+            data=training, method="gbm",
+            distribution="bernoulli", 
+            trControl=gbmControl, verbose=F, 
+            tuneGrid=data.frame(.n.trees=seq(100, 1000, 
+                                              by = 100), 
+                                 .shrinkage=c(0.01, 0.1), 
+                                 .interaction.depth=1:2, 
+                                 .n.minobsinnode=1:5),
+             na.action = na.omit)
+
+y_hat_gbm <- predict(gbm, newdata = testing, na.action = na.pass)
+
+confusionMatrix(y_hat_gbm, reference = testing$Name)
+```
+
+## Random Forest
+
+```{r}
+library(randomForest)
+rf<- randomForest(Name ~ Avg_rating + Avg_review_count + Population +
+               White_tot + Asian_tot + Black_tot, 
+                  data=training,
+                  importance = TRUE,
+                  na.action = na.omit)
+
+y_hat_rf <- predict(rf, newdata = testing,
+                 type = "response", na.action = na.pass)
+
+confusionMatrix(y_hat_rf, reference = testing$Name)
+```
+
+## Neural Network Model
+
+```{r}
+nnetGrid <- expand.grid(.decay = c(0, 0.01, .1),
+                        .size = c(1:10))
+ctrl_nn <- trainControl(method = "cv", number = 10)
+
+nn <- train(Name ~ Avg_rating + Avg_review_count + Population +
+               White_tot + Asian_tot + Black_tot, 
+            data = training, method = "nnet",
+            trControl = ctrl_nn, tuneGrid = nnetGrid,
+            preProcess = c("center", "scale"), trace = FALSE)
+
+y_hat_nn <- predict(nn, newdata = testing)
+confusionMatrix(y_hat_nn, reference = testing$Name)
+```
+
+```{r}
+nn <- train(Name ~ Avg_rating + Avg_review_count + Population +
+               White_tot + Asian_tot + Black_tot + Median_Income, 
+            data = training, method = "nnet",
+            trControl = ctrl_nn, tuneGrid = nnetGrid,
+            preProcess = c("center", "scale"), trace = FALSE)
+
+y_hat_nn <- predict(nn, newdata = testing)
+confusionMatrix(y_hat_nn, reference = testing$Name)
+```
+
+```{r}
+nn <- train(Name ~ Avg_rating + Avg_review_count +
+               White_tot + Asian_tot + Black_tot, 
+            data = training, method = "nnet",
+            trControl = ctrl_nn, tuneGrid = nnetGrid,
+            preProcess = c("center", "scale"), trace = FALSE)
+
+y_hat_nn <- predict(nn, newdata = testing)
+confusionMatrix(y_hat_nn, reference = testing$Name)
+```
+
+```{r}
+nn <- train(Name ~ Avg_rating + Avg_review_count, 
+            data = training, method = "nnet",
+            trControl = ctrl_nn, tuneGrid = nnetGrid,
+            preProcess = c("center", "scale"), trace = FALSE)
+
+y_hat_nn <- predict(nn, newdata = testing)
+confusionMatrix(y_hat_nn, reference = testing$Name)
+```
+
+## MARS model
+
+```{r, warning=FALSE, message=FALSE}
+ctrl_mars <- trainControl(method = "cv", number = 10)
+marsGrid <- expand.grid(.degree = 1:3, .nprune = 1:10)
+
+mars <- train(Name ~ Avg_rating + Avg_review_count + Population +
+               White_tot + Asian_tot + Black_tot,  
+              data = training, method = "earth", 
+              trControl = ctrl_mars, tuneGrid = marsGrid)
+
+y_hat_mars <- predict(mars, newdata = testing)
+confusionMatrix(y_hat_mars, reference = testing$Name)
+```
+
